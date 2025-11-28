@@ -8,6 +8,9 @@ const SocialMediaMarketing = () => {
       title="Social Media Marketing"
       description="Strategic social media campaigns that build brand awareness and engage with your target audience."
       icon={<Share2 className="h-16 w-16 text-fivsys-red" />}
+      seoTitle="Social Media Marketing Services | Instagram, Facebook, LinkedIn | Fivsys"
+      seoDescription="Professional social media marketing services. Strategy, content creation, community management, influencer marketing, paid ads, and analytics for all platforms."
+      seoKeywords="social media marketing Bangalore, Instagram marketing, Facebook ads, LinkedIn marketing, social media strategy, influencer marketing, social media management"
       features={[
         "Social Media Strategy Development",
         "Platform Selection and Optimization",

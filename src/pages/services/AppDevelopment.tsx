@@ -8,6 +8,9 @@ const AppDevelopment = () => {
       title="App Development"
       description="Native and cross-platform mobile applications that deliver exceptional user experiences across all devices."
       icon={<Smartphone className="h-16 w-16 text-fivsys-red" />}
+      seoTitle="Mobile App Development Services | iOS & Android | Fivsys Bangalore"
+      seoDescription="Professional mobile app development services. Native iOS, Android, and cross-platform apps with AI integration, superior UX design, and app store optimization."
+      seoKeywords="app development Bangalore, mobile app development, iOS app development, Android app development, cross-platform apps, React Native, Flutter, mobile UX design"
       features={[
         "Native iOS app development",
         "Native Android app development",

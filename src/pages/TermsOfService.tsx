@@ -2,10 +2,17 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title="Terms of Service | Fivsys - AI-Powered Solutions"
+        description="Review Fivsys terms of service. Understand the terms and conditions for using our AI-powered development and digital marketing services."
+        keywords="terms of service, terms and conditions, fivsys terms, service agreement"
+        schemaType="WebPage"
+      />
       <Navbar />
 
       {/* Header Section */}

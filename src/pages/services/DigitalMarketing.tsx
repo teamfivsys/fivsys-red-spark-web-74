@@ -8,6 +8,9 @@ const DigitalMarketing = () => {
       title="Digital Marketing"
       description="Data-driven digital marketing strategies that increase your online visibility and drive measurable results."
       icon={<BarChart3 className="h-16 w-16 text-fivsys-red" />}
+      seoTitle="Digital Marketing Services | SEO, PPC, Content Marketing | Fivsys"
+      seoDescription="AI-powered digital marketing services in Bangalore. SEO, SEM, PPC advertising, content marketing, email campaigns, analytics, and conversion optimization."
+      seoKeywords="digital marketing Bangalore, SEO services, PPC advertising, content marketing, email marketing, social media marketing, Google Ads, conversion optimization"
       features={[
         "Search Engine Optimization (SEO)",
         "Pay-Per-Click (PPC) Advertising",

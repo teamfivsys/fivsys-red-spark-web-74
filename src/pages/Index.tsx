@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import GeometricBackground from '@/components/GeometricBackground';
+import SEO from '@/components/SEO';
 
 const services = [
   {
@@ -62,6 +63,12 @@ const stats = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title="fivsys | AI-Powered Development & Marketing Solutions"
+        description="Transform your business with fivsys AI-powered website development, app development, web solutions, digital marketing, and sales strategy services in Bangalore, India."
+        keywords="AI development, website development Bangalore, app development India, web applications, digital marketing services, social media marketing, sales strategy, AI-powered solutions, business transformation"
+        schemaType="WebPage"
+      />
       <GeometricBackground />
       <Navbar />
       
