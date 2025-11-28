@@ -204,8 +204,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold mb-3 text-2xl text-white group-hover:text-fivsys-red transition-colors">Enterprise Hotline</h3>
                       <p className="text-fivsys-silver text-lg">
-                        <a href="tel:+916361866050" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
-                          +91 6361866050
+                        <a href="tel:+917356137106" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
+                          +91 7356137106
                         </a>
                         <br />
                         <span className="text-sm text-fivsys-silver/80">24/7 Business Support</span>
