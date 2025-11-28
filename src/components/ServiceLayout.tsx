@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 interface ServiceLayoutProps {
   title: string;
@@ -19,6 +20,9 @@ interface ServiceLayoutProps {
     description: string;
   }>;
   ctaText?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  seoKeywords?: string;
 }
 
 const ServiceLayout: React.FC<ServiceLayoutProps> = ({
@@ -28,10 +32,19 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
   features,
   benefits,
   processSteps,
-  ctaText = "Ready to transform your business?"
+  ctaText = "Ready to transform your business?",
+  seoTitle,
+  seoDescription,
+  seoKeywords
 }) => {
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title={seoTitle || `${title} Services | Fivsys AI-Powered Solutions`}
+        description={seoDescription || description}
+        keywords={seoKeywords || `${title}, AI solutions, Bangalore, India`}
+        schemaType="Service"
+      />
       <Navbar />
 
       {/* Hero Section */}

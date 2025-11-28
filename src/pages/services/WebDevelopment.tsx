@@ -8,6 +8,9 @@ const WebDevelopment = () => {
       title="Web Development"
       description="Custom AI-powered websites designed to convert visitors into customers, with stunning visuals and seamless functionality."
       icon={<Globe className="h-16 w-16 text-fivsys-red" />}
+      seoTitle="AI Web Development Services | Custom Websites | Fivsys Bangalore"
+      seoDescription="Expert AI-powered web development services in Bangalore. Custom websites, responsive design, CMS, e-commerce, PWA, SEO optimization, and maintenance services."
+      seoKeywords="web development Bangalore, AI website development, custom website design, responsive web design, e-commerce development, CMS development, PWA development, website SEO"
       features={[
         "Custom website design and development",
         "Responsive and mobile-friendly layouts",

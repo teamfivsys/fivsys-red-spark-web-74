@@ -8,6 +8,9 @@ const WebAppDevelopment = () => {
       title="Web App Development"
       description="Powerful, scalable web applications with robust backend systems and intuitive user interfaces."
       icon={<Code className="h-16 w-16 text-fivsys-red" />}
+      seoTitle="Web Application Development | SaaS & Enterprise Apps | Fivsys"
+      seoDescription="Custom web application development services. Build scalable SaaS platforms, enterprise apps, dashboards with AI, cloud deployment, and real-time features."
+      seoKeywords="web app development, SaaS development, enterprise software, custom web applications, cloud applications, real-time web apps, API development, microservices"
       features={[
         "Custom web application development",
         "Full-stack development services",

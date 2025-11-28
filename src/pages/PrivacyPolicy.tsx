@@ -2,10 +2,17 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title="Privacy Policy | Fivsys - AI-Powered Solutions"
+        description="Read Fivsys privacy policy. Learn how we collect, use, and protect your personal information when you use our AI-powered development and marketing services."
+        keywords="privacy policy, data protection, fivsys privacy, information security"
+        schemaType="WebPage"
+      />
       <Navbar />
 
       {/* Header Section */}

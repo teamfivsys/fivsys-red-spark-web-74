@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Check, Users, Lightbulb, Target, Award, ArrowRight } from 'lucide-react';
 import OrigamiBackground from '@/components/OrigamiBackground';
+import SEO from '@/components/SEO';
 
 const About = () => {
   const values = [
@@ -32,6 +33,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title="About Fivsys | AI-Powered Development Company in Bangalore"
+        description="Learn about Fivsys - pioneers in AI-powered web development, app development, and digital marketing solutions. Our story, values, and commitment to innovation."
+        keywords="about fivsys, AI company Bangalore, web development company, digital transformation, innovation, technology company India"
+        schemaType="AboutPage"
+      />
       <Navbar />
 
       {/* Hero Section */}

@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import BackToTop from "./components/BackToTop";
 import WhatsAppWidget from "./components/WhatsAppWidget";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <Breadcrumbs />
         <BackToTop />
         <WhatsAppWidget />
         <Routes>

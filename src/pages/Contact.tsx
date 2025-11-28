@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Send, Check, Zap, Cpu, Brain, Sparkles, Shield, Rocket, Target, Globe, Code2, Bot } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import GeometricBackground from '@/components/GeometricBackground';
+import SEO from '@/components/SEO';
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -73,6 +74,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <SEO 
+        title="Contact Fivsys | Get in Touch for AI Solutions | +91 7356137106"
+        description="Contact Fivsys for AI-powered development and marketing solutions. Located in Bangalore. Call +91 7356137106 or email info@fivsys.com for enterprise consultations."
+        keywords="contact fivsys, AI solutions Bangalore, web development contact, digital marketing inquiry, Sarjapura Bangalore, enterprise solutions India"
+        schemaType="ContactPage"
+      />
       <GeometricBackground />
       <Navbar />
 
