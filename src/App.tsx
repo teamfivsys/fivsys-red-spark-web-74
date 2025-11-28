@@ -17,6 +17,7 @@ import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import BackToTop from "./components/BackToTop";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <BackToTop />
+        <WhatsAppWidget />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
