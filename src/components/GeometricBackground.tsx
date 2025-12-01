@@ -20,8 +20,16 @@ const GeometricBackground = () => {
   }>>([]);
 
   useEffect(() => {
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.innerWidth < 768;
+    
+    // Reduce complexity on mobile and for users who prefer reduced motion
+    const particleCount = prefersReducedMotion || isMobile ? 8 : 15;
+    const nodeCount = prefersReducedMotion || isMobile ? 3 : 6;
+    
     // Generate enhanced particles with AI energy feel
-    const newParticles = Array.from({ length: 35 }).map((_, index) => ({
+    const newParticles = Array.from({ length: particleCount }).map((_, index) => ({
       id: index,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -33,12 +41,12 @@ const GeometricBackground = () => {
     setParticles(newParticles);
 
     // Generate AI network nodes
-    const newNodes = Array.from({ length: 12 }).map((_, index) => ({
+    const newNodes = Array.from({ length: nodeCount }).map((_, index) => ({
       id: index,
       x: 10 + Math.random() * 80,
       y: 10 + Math.random() * 80,
-      connections: Array.from({ length: Math.floor(Math.random() * 3) + 1 }, () => 
-        Math.floor(Math.random() * 12)
+      connections: Array.from({ length: Math.floor(Math.random() * 2) + 1 }, () => 
+        Math.floor(Math.random() * nodeCount)
       ).filter(conn => conn !== index),
     }));
     setAiNodes(newNodes);
@@ -65,6 +73,7 @@ const GeometricBackground = () => {
               boxShadow: `0 0 ${particle.size * 8}px rgba(223, 37, 49, ${particle.opacity * 0.8})`,
               animationDelay: `${particle.id * 0.3}s`,
               animationDuration: `${6 + particle.id * 0.4}s`,
+              willChange: 'transform',
             }}
           />
         ))}
@@ -111,7 +120,7 @@ const GeometricBackground = () => {
         </svg>
 
         {/* Enhanced geometric lines with AI energy */}
-        {Array.from({ length: 40 }).map((_, index) => {
+        {Array.from({ length: 15 }).map((_, index) => {
           const randomAngle = Math.random() * 360;
           const randomX = Math.random() * 100;
           const randomY = Math.random() * 100;
@@ -132,6 +141,7 @@ const GeometricBackground = () => {
                 boxShadow: `0 0 ${8 + intensity * 12}px rgba(223, 37, 49, ${redIntensity})`,
                 animationDelay: `${index * 0.2}s`,
                 animationDuration: `${10 + index * 0.15}s`,
+                willChange: 'transform',
               }}
             />
           );
@@ -158,7 +168,7 @@ const GeometricBackground = () => {
         />
 
         {/* AI data streams */}
-        {Array.from({ length: 8 }).map((_, index) => (
+        {Array.from({ length: 4 }).map((_, index) => (
           <div
             key={`stream-${index}`}
             className="absolute w-1 opacity-30"

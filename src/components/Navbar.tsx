@@ -56,56 +56,22 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <Link to="/" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
-                Home
+              <Link to="/#services" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+                Services
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <div className="relative group">
-                <button className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 flex items-center relative">
-                  Services
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
-                </button>
-                <div className="absolute left-0 mt-2 w-64 rounded-lg shadow-xl bg-black/95 border border-fivsys-red/30 backdrop-blur-md invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <div className="py-2 rounded-lg">
-                    <Link to="/services/web-development" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Brain className="w-4 h-4" />
-                        <span>AI Web Development</span>
-                      </div>
-                    </Link>
-                    <Link to="/services/app-development" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Zap className="w-4 h-4" />
-                        <span>Smart App Development</span>
-                      </div>
-                    </Link>
-                    <Link to="/services/web-app-development" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Brain className="w-4 h-4" />
-                        <span>AI Web Applications</span>
-                      </div>
-                    </Link>
-                    <Link to="/services/digital-marketing" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Zap className="w-4 h-4" />
-                        <span>AI-Driven Marketing</span>
-                      </div>
-                    </Link>
-                    <Link to="/services/social-media-marketing" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Brain className="w-4 h-4" />
-                        <span>Smart Social Media</span>
-                      </div>
-                    </Link>
-                    <Link to="/services/sales-strategy" className="block px-4 py-3 text-sm text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300 border-l-2 border-transparent hover:border-fivsys-red">
-                      <div className="flex items-center space-x-2">
-                        <Zap className="w-4 h-4" />
-                        <span>AI Sales Strategy</span>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link to="/#how-it-works" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+                How It Works
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
+              </Link>
+              <Link to="/#pricing" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+                Pricing
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
+              </Link>
+              <Link to="/#faq" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+                FAQ
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
+              </Link>
               <Link to="/about" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
                 About
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
@@ -145,58 +111,33 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/98 backdrop-blur-md border-t border-fivsys-red/20">
             <Link 
-              to="/"
+              to="/#services"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
-              Home
+              Services
             </Link>
-            <div className="space-y-0.5 pl-3 mt-1 border-l border-fivsys-red/30">
-              <Link 
-                to="/services/web-development"
-                className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                <Brain className="w-4 h-4" />
-                <span>AI Web Development</span>
-              </Link>
-              <Link 
-                to="/services/app-development"
-                className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                <Zap className="w-4 h-4" />
-                <span>Smart App Development</span>
-              </Link>
-              <Link 
-                to="/services/web-app-development"
-                className="block px-4 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Web App Development
-              </Link>
-              <Link 
-                to="/services/digital-marketing"
-                className="block px-4 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Digital Marketing
-              </Link>
-              <Link 
-                to="/services/social-media-marketing"
-                className="block px-4 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Social Media Marketing
-              </Link>
-              <Link 
-                to="/services/sales-strategy"
-                className="block px-4 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-fivsys-red/20 hover:text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Sales Strategy
-              </Link>
-            </div>
+            <Link 
+              to="/#how-it-works"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              How It Works
+            </Link>
+            <Link 
+              to="/#pricing"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link 
+              to="/#faq"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              FAQ
+            </Link>
             <Link 
               to="/about"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"

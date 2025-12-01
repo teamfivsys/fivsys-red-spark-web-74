@@ -65,9 +65,35 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <SEO 
         title="fivsys | AI-Powered Development & Marketing Solutions"
-        description="Transform your business with fivsys AI-powered website development, app development, web solutions, digital marketing, and sales strategy services in Bangalore, India."
-        keywords="AI development, website development Bangalore, app development India, web applications, digital marketing services, social media marketing, sales strategy, AI-powered solutions, business transformation"
+        description="Transform your Indian business with fivsys AI-powered website development, WhatsApp automation, chatbots, and digital marketing services in Bangalore."
+        keywords="AI development India, website development Bangalore, WhatsApp automation, AI chatbots, app development India, web applications, digital marketing services, automation for Indian businesses"
         schemaType="WebPage"
+        faqItems={[
+          {
+            question: "What is AI-powered website development?",
+            answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences that adapt to your customers' needs."
+          },
+          {
+            question: "How does WhatsApp automation help my business?",
+            answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically - saving you time while improving customer satisfaction."
+          },
+          {
+            question: "What businesses benefit most from your services?",
+            answer: "Indian small to medium businesses like spas, salons, clinics, local shops, service providers, and agencies see the most impact. Any business wanting to automate and grow digitally benefits."
+          },
+          {
+            question: "How long does it take to build a website?",
+            answer: "Basic websites take 2-3 weeks, while complex AI-powered solutions take 4-8 weeks. We provide regular updates and can adjust timelines based on your launch requirements."
+          },
+          {
+            question: "Do you provide support after launch?",
+            answer: "Yes! All our plans include support periods (3-6 months). We offer 24/7 AI-powered monitoring and quick response times for any issues or updates you need."
+          },
+          {
+            question: "Can I upgrade my plan later?",
+            answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
+          }
+        ]}
       />
       <GeometricBackground />
       <Navbar />
@@ -138,7 +164,7 @@ const Index = () => {
       </section>
       
       {/* Services Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-fivsys-darkGray/20">
+      <section id="services" className="py-20 bg-gradient-to-b from-black to-fivsys-darkGray/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -197,7 +223,7 @@ const Index = () => {
       </section>
       
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-br from-black to-fivsys-darkGray/30">
+      <section id="about" className="py-20 bg-gradient-to-br from-black to-fivsys-darkGray/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -262,8 +288,212 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-black via-fivsys-darkGray/20 to-black">
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
+              <Zap className="w-4 h-4 text-fivsys-red" />
+              <span className="text-sm font-semibold text-fivsys-red">OUR PROCESS</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="text-white">How We Transform Your </span>
+              <span className="text-fivsys-red">Business</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              From consultation to launch, we make AI adoption seamless for Indian businesses.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Consultation", description: "Free discovery call to understand your business needs and goals.", icon: <Users className="w-6 h-6" /> },
+              { step: "02", title: "Strategy", description: "Custom AI strategy designed for your specific industry and market.", icon: <Brain className="w-6 h-6" /> },
+              { step: "03", title: "Development", description: "Building your solution with cutting-edge AI technology and design.", icon: <Code className="w-6 h-6" /> },
+              { step: "04", title: "Launch & Support", description: "Deploy your solution and ongoing 24/7 AI-powered support.", icon: <Zap className="w-6 h-6" /> }
+            ].map((item, index) => (
+              <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all">
+                <CardContent className="p-6">
+                  <div className="text-fivsys-red/30 text-5xl font-bold mb-4">{item.step}</div>
+                  <div className="w-12 h-12 bg-fivsys-red/20 rounded-lg flex items-center justify-center mb-4 text-fivsys-red">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                  <p className="text-gray-300">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 bg-gradient-to-b from-black to-fivsys-darkGray/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
+              <TrendingUp className="w-4 h-4 text-fivsys-red" />
+              <span className="text-sm font-semibold text-fivsys-red">FLEXIBLE PRICING</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Plans That Scale With </span>
+              <span className="text-fivsys-red">Your Growth</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Choose the perfect plan for your business size and goals. All plans include our AI excellence guarantee.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              { 
+                name: "Starter", 
+                price: "₹25,000", 
+                period: "one-time",
+                features: ["Basic Website", "WhatsApp Integration", "3 Months Support", "Mobile Responsive", "SEO Basics"],
+                highlight: false
+              },
+              { 
+                name: "Growth", 
+                price: "₹50,000", 
+                period: "one-time",
+                features: ["Advanced Website", "AI Chatbot", "WhatsApp Automation", "6 Months Support", "Advanced SEO", "Analytics Dashboard"],
+                highlight: true
+              },
+              { 
+                name: "Enterprise", 
+                price: "Custom", 
+                period: "pricing",
+                features: ["Custom Solution", "Full AI Integration", "Dedicated Support", "Unlimited Updates", "Advanced Analytics", "Priority Development"],
+                highlight: false
+              }
+            ].map((plan, index) => (
+              <Card key={index} className={`relative ${plan.highlight ? 'border-fivsys-red/50 bg-gradient-to-br from-fivsys-red/10 to-black' : 'bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10'}`}>
+                {plan.highlight && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-fivsys-red text-white text-sm font-semibold rounded-full">
+                    Most Popular
+                  </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="text-2xl text-white mb-2">{plan.name}</CardTitle>
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-4xl font-bold text-fivsys-red">{plan.price}</span>
+                    <span className="text-gray-400 text-sm">/{plan.period}</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-gray-300">
+                        <ChevronRight className="w-5 h-5 text-fivsys-red flex-shrink-0 mt-0.5" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild className={`w-full ${plan.highlight ? 'bg-fivsys-red hover:bg-fivsys-darkRed' : 'bg-white/10 hover:bg-fivsys-red/20 border border-white/20'}`}>
+                    <Link to="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section id="use-cases" className="py-20 bg-gradient-to-br from-black to-fivsys-darkGray/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
+              <Sparkles className="w-4 h-4 text-fivsys-red" />
+              <span className="text-sm font-semibold text-fivsys-red">SUCCESS STORIES</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Perfect for Indian </span>
+              <span className="text-fivsys-red">Businesses</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Spas & Salons", description: "Automated booking, WhatsApp reminders, customer management", icon: <Sparkles className="w-8 h-8" /> },
+              { title: "Clinics & Doctors", description: "Appointment scheduling, patient communication, AI assistance", icon: <Users className="w-8 h-8" /> },
+              { title: "Local Shops", description: "Online presence, inventory updates, customer engagement", icon: <Globe className="w-8 h-8" /> },
+              { title: "Agencies", description: "Lead capture, client portals, automated workflows", icon: <TrendingUp className="w-8 h-8" /> }
+            ].map((useCase, index) => (
+              <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-fivsys-red/20 rounded-full flex items-center justify-center mx-auto mb-4 text-fivsys-red group-hover:scale-110 transition-transform">
+                    {useCase.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">{useCase.title}</h3>
+                  <p className="text-gray-300 text-sm">{useCase.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
+              <Brain className="w-4 h-4 text-fivsys-red" />
+              <span className="text-sm font-semibold text-fivsys-red">FAQ</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Frequently Asked </span>
+              <span className="text-fivsys-red">Questions</span>
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                question: "What is AI-powered website development?",
+                answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences that adapt to your customers' needs."
+              },
+              {
+                question: "How does WhatsApp automation help my business?",
+                answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically - saving you time while improving customer satisfaction."
+              },
+              {
+                question: "What businesses benefit most from your services?",
+                answer: "Indian small to medium businesses like spas, salons, clinics, local shops, service providers, and agencies see the most impact. Any business wanting to automate and grow digitally benefits."
+              },
+              {
+                question: "How long does it take to build a website?",
+                answer: "Basic websites take 2-3 weeks, while complex AI-powered solutions take 4-8 weeks. We provide regular updates and can adjust timelines based on your launch requirements."
+              },
+              {
+                question: "Do you provide support after launch?",
+                answer: "Yes! All our plans include support periods (3-6 months). We offer 24/7 AI-powered monitoring and quick response times for any issues or updates you need."
+              },
+              {
+                question: "Can I upgrade my plan later?",
+                answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
+              }
+            ].map((faq, index) => (
+              <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10">
+                <CardHeader>
+                  <CardTitle className="text-lg text-white flex items-start gap-3">
+                    <ChevronRight className="w-5 h-5 text-fivsys-red flex-shrink-0 mt-1" />
+                    {faq.question}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300 pl-8">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Section */}
+      <section id="contact" className="py-20 bg-gradient-to-r from-black via-fivsys-darkGray/20 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-gradient-to-br from-fivsys-red/10 to-fivsys-darkGray/20 border-fivsys-red/30 backdrop-blur-sm">
             <CardContent className="text-center p-12">

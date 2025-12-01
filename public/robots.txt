@@ -3,6 +3,11 @@
 
 User-agent: *
 Allow: /
+Allow: /#services
+Allow: /#how-it-works
+Allow: /#pricing
+Allow: /#faq
+Allow: /#contact
 
 # Sitemap location
 Sitemap: https://fivsys.com/sitemap.xml
