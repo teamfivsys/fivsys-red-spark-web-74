@@ -7,16 +7,18 @@ interface SEOProps {
   keywords?: string;
   image?: string;
   type?: string;
-  schemaType?: 'WebPage' | 'Service' | 'AboutPage' | 'ContactPage';
+  schemaType?: 'WebPage' | 'Service' | 'AboutPage' | 'ContactPage' | 'FAQPage';
+  faqItems?: Array<{ question: string; answer: string }>;
 }
 
 const SEO = ({
   title = 'fivsys | AI-Powered Development & Marketing Solutions',
-  description = 'Transform your business with fivsys AI-powered website development, app development, web solutions, digital marketing, and sales strategy services.',
-  keywords = 'AI development, website development, app development, web applications, digital marketing, social media marketing, sales strategy, AI-powered solutions',
-  image = 'https://lovable.dev/opengraph-image-p98pqg.png',
+  description = 'Transform your Indian business with fivsys AI-powered website development, WhatsApp automation, chatbots, and digital marketing services in Bangalore.',
+  keywords = 'AI development India, website development Bangalore, WhatsApp automation, AI chatbots, app development India, web applications, digital marketing services, automation for Indian businesses',
+  image = 'https://fivsys.com/og-image.jpg',
   type = 'website',
   schemaType = 'WebPage',
+  faqItems = [],
 }: SEOProps) => {
   const location = useLocation();
   const currentUrl = `https://fivsys.com${location.pathname}`;
@@ -102,6 +104,20 @@ const SEO = ({
     }
   };
 
+  // FAQ Schema
+  const faqSchema = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  } : null;
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
@@ -139,6 +155,11 @@ const SEO = ({
       <script type="application/ld+json">
         {JSON.stringify(pageSchema)}
       </script>
+      {faqSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
     </Helmet>
   );
 };
