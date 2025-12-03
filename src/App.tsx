@@ -14,6 +14,8 @@ import SocialMediaMarketing from "./pages/services/SocialMediaMarketing";
 import SalesStrategy from "./pages/services/SalesStrategy";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import BackToTop from "./components/BackToTop";
@@ -44,6 +46,10 @@ const App = () => (
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/services/social-media-marketing" element={<SocialMediaMarketing />} />
           <Route path="/services/sales-strategy" element={<SalesStrategy />} />
+          
+          {/* Blog Routes */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           
           {/* Legal Pages */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

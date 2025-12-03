@@ -72,6 +72,10 @@ const Navbar = () => {
                 FAQ
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
+              <Link to="/blog" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+                Blog
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
+              </Link>
               <Link to="/about" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
                 About
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
@@ -137,6 +141,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               FAQ
+            </Link>
+            <Link 
+              to="/blog"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Blog
             </Link>
             <Link 
               to="/about"
