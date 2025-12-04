@@ -92,6 +92,30 @@ const Index = () => {
           {
             question: "Can I upgrade my plan later?",
             answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
+          },
+          {
+            question: "What is the cost of website development in India?",
+            answer: "Website costs vary based on complexity. Basic websites start from ₹15,000, business websites from ₹35,000, and AI-powered solutions from ₹75,000. We offer flexible payment plans for all budgets."
+          },
+          {
+            question: "Do you work with clients outside Bangalore?",
+            answer: "Yes! While we're based in Bangalore, we work with clients across India and internationally. All our communication and project management is handled digitally for seamless collaboration."
+          },
+          {
+            question: "What technologies do you use?",
+            answer: "We use modern technologies including React, Node.js, Python for AI/ML, cloud platforms like AWS and Google Cloud, and integrate with popular tools like WhatsApp Business API, payment gateways, and CRM systems."
+          },
+          {
+            question: "Can you help with SEO and digital marketing?",
+            answer: "Absolutely! We offer comprehensive digital marketing services including SEO, Google Ads, social media marketing, and content marketing to help your business grow online and attract more customers."
+          },
+          {
+            question: "Do you provide website maintenance services?",
+            answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month."
+          },
+          {
+            question: "What payment methods do you accept?",
+            answer: "We accept all major payment methods including bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards, and PayPal for international clients. We also offer EMI options for larger projects."
           }
         ]}
       />
@@ -474,6 +498,30 @@ const Index = () => {
               {
                 question: "Can I upgrade my plan later?",
                 answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
+              },
+              {
+                question: "What is the cost of website development in India?",
+                answer: "Website costs vary based on complexity. Basic websites start from ₹15,000, business websites from ₹35,000, and AI-powered solutions from ₹75,000. We offer flexible payment plans for all budgets."
+              },
+              {
+                question: "Do you work with clients outside Bangalore?",
+                answer: "Yes! While we're based in Bangalore, we work with clients across India and internationally. All our communication and project management is handled digitally for seamless collaboration."
+              },
+              {
+                question: "What technologies do you use?",
+                answer: "We use modern technologies including React, Node.js, Python for AI/ML, cloud platforms like AWS and Google Cloud, and integrate with popular tools like WhatsApp Business API, payment gateways, and CRM systems."
+              },
+              {
+                question: "Can you help with SEO and digital marketing?",
+                answer: "Absolutely! We offer comprehensive digital marketing services including SEO, Google Ads, social media marketing, and content marketing to help your business grow online and attract more customers."
+              },
+              {
+                question: "Do you provide website maintenance services?",
+                answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month."
+              },
+              {
+                question: "What payment methods do you accept?",
+                answer: "We accept all major payment methods including bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards, and PayPal for international clients. We also offer EMI options for larger projects."
               }
             ].map((faq, index) => (
               <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10">
