@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import BlogSearchFilter from '@/components/BlogSearchFilter';
-import NewsletterSignup from '@/components/NewsletterSignup';
 import LeadMagnetCard from '@/components/LeadMagnetCard';
 import BlogCTA from '@/components/BlogCTA';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -173,11 +172,6 @@ const Blog = () => {
                 Expert insights on AI automation, digital marketing, and business growth strategies 
                 tailored for Indian small and medium businesses.
               </p>
-            </div>
-
-            {/* Newsletter Signup */}
-            <div className="max-w-2xl mx-auto mb-12">
-              <NewsletterSignup />
             </div>
 
             {/* Search & Filter */}
