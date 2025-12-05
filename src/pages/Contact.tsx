@@ -11,18 +11,31 @@ import { useToast } from '@/components/ui/use-toast';
 import GeometricBackground from '@/components/GeometricBackground';
 import SEO from '@/components/SEO';
 
+const businessTypes = [
+  { value: '', label: 'Select your business type' },
+  { value: 'spa-salon', label: 'Spa / Salon' },
+  { value: 'clinic-healthcare', label: 'Clinic / Healthcare' },
+  { value: 'local-shop-retail', label: 'Local Shop / Retail' },
+  { value: 'agency-consulting', label: 'Agency / Consulting' },
+  { value: 'startup', label: 'Startup' },
+  { value: 'restaurant-cafe', label: 'Restaurant / Cafe' },
+  { value: 'education', label: 'Education / Coaching' },
+  { value: 'other', label: 'Other' },
+];
+
 const Contact = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
+    businessType: '',
     subject: '',
     message: '',
   });
   const { toast } = useToast();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -43,6 +56,7 @@ const Contact = () => {
           from_name: formData.name,
           from_email: formData.email,
           phone: formData.phone,
+          business_type: formData.businessType,
           subject: formData.subject,
           message: formData.message,
         },
@@ -53,6 +67,7 @@ const Contact = () => {
       setFormData({
         name: '',
         email: '',
+        businessType: '',
         phone: '',
         subject: '',
         message: '',
@@ -275,9 +290,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-fivsys-red to-white bg-clip-text text-transparent">
-                        Start Your AI Transformation
+                        Get Free AI Automation Consultation
                       </h2>
-                      <p className="text-fivsys-silver text-lg mt-2">Enterprise consultation & strategic planning</p>
+                      <p className="text-fivsys-silver text-lg mt-2">We respond within 24 hours on business days</p>
                     </div>
                   </div>
                   
@@ -337,31 +352,50 @@ const Contact = () => {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="group">
                           <label htmlFor="phone" className="block text-sm font-semibold mb-2 text-fivsys-silver group-focus-within:text-fivsys-red transition-colors">
-                            Phone Number
+                            Phone Number (India)
                           </label>
                           <Input
                             id="phone"
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder="(123) 456-7890"
+                            placeholder="+91 98765 43210"
                             className="bg-black/50 border-fivsys-silver/30 focus:border-fivsys-red focus:ring-fivsys-red/20 transition-all duration-300 h-12"
                           />
                         </div>
                         <div className="group">
-                          <label htmlFor="subject" className="block text-sm font-semibold mb-2 text-fivsys-silver group-focus-within:text-fivsys-red transition-colors">
-                            Project Type
+                          <label htmlFor="businessType" className="block text-sm font-semibold mb-2 text-fivsys-silver group-focus-within:text-fivsys-red transition-colors">
+                            Business Type
                           </label>
-                          <Input
-                            id="subject"
-                            name="subject"
-                            value={formData.subject}
+                          <select
+                            id="businessType"
+                            name="businessType"
+                            value={formData.businessType}
                             onChange={handleChange}
-                            placeholder="AI Web Development"
                             required
-                            className="bg-black/50 border-fivsys-silver/30 focus:border-fivsys-red focus:ring-fivsys-red/20 transition-all duration-300 h-12"
-                          />
+                            className="w-full bg-black/50 border border-fivsys-silver/30 focus:border-fivsys-red focus:ring-fivsys-red/20 transition-all duration-300 h-12 rounded-md px-3 text-white"
+                          >
+                            {businessTypes.map((type) => (
+                              <option key={type.value} value={type.value} className="bg-black text-white">
+                                {type.label}
+                              </option>
+                            ))}
+                          </select>
                         </div>
+                      </div>
+                      <div className="group">
+                        <label htmlFor="subject" className="block text-sm font-semibold mb-2 text-fivsys-silver group-focus-within:text-fivsys-red transition-colors">
+                          Project Type
+                        </label>
+                        <Input
+                          id="subject"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          placeholder="AI Web Development, WhatsApp Automation, etc."
+                          required
+                          className="bg-black/50 border-fivsys-silver/30 focus:border-fivsys-red focus:ring-fivsys-red/20 transition-all duration-300 h-12"
+                        />
                       </div>
                       <div className="group">
                         <label htmlFor="message" className="block text-sm font-semibold mb-2 text-fivsys-silver group-focus-within:text-fivsys-red transition-colors">

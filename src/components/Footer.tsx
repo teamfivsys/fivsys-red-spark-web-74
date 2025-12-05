@@ -173,14 +173,23 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-fivsys-red/20">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} Fivsys. All rights reserved. Powered by AI Excellence.
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex items-center space-x-2 text-sm text-fivsys-red font-semibold">
+              <MapPin className="w-4 h-4" />
+              <span>Proudly Serving Businesses Across India</span>
+            </div>
+            <p className="text-gray-500 text-xs text-center">
+              Bangalore • Mumbai • Delhi • Chennai • Hyderabad • Pune • Kolkata
             </p>
-            <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <Brain className="w-4 h-4 text-fivsys-red animate-pulse" />
-              <span>Building the Future with AI</span>
-              <Zap className="w-4 h-4 text-fivsys-red animate-gentle-glow" />
+            <div className="flex flex-col md:flex-row items-center justify-between w-full pt-4">
+              <p className="text-gray-400 text-sm mb-4 md:mb-0">
+                © {new Date().getFullYear()} Fivsys. All rights reserved. Powered by AI Excellence.
+              </p>
+              <div className="flex items-center space-x-2 text-sm text-gray-400">
+                <Brain className="w-4 h-4 text-fivsys-red animate-pulse" />
+                <span>Building the Future with AI</span>
+                <Zap className="w-4 h-4 text-fivsys-red animate-gentle-glow" />
+              </div>
             </div>
           </div>
         </div>
