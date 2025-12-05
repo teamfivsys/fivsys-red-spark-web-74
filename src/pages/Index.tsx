@@ -1,12 +1,13 @@
 
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Smartphone, Globe, BarChart3, Share2, TrendingUp, ChevronRight, Zap, Brain, Cpu, Sparkles, Star, Users, Award, Clock } from 'lucide-react';
+import { ArrowRight, Code, Smartphone, Globe, BarChart3, Share2, TrendingUp, ChevronRight, Zap, Brain, Cpu, Sparkles, Star, Users, Award, Clock, MapPin, IndianRupee, Headphones, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import GeometricBackground from '@/components/GeometricBackground';
 import SEO from '@/components/SEO';
+import BlogTeaser from '@/components/BlogTeaser';
 
 const services = [
   {
@@ -130,41 +131,54 @@ const Index = () => {
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 backdrop-blur-sm mb-8">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-fivsys-red rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-fivsys-red">AI EXCELLENCE</span>
+                <span className="text-sm font-semibold text-fivsys-red">🇮🇳 BUILT FOR INDIAN BUSINESSES</span>
               </div>
               <div className="w-px h-4 bg-fivsys-red/30"></div>
-              <span className="text-sm text-gray-300">Powered by Advanced Intelligence</span>
+              <span className="text-sm text-gray-300">AI-Powered Solutions</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="block text-white mb-2">Future-Ready</span>
+              <span className="block text-white mb-2">AI Automation &</span>
               <span className="block bg-gradient-to-r from-fivsys-red via-white to-fivsys-red bg-clip-text text-transparent">
-                AI Solutions
+                Development for India
               </span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Transform your business with enterprise-grade artificial intelligence.
-              <span className="block mt-2 text-fivsys-red font-semibold">
-                Experience the power of intelligent automation.
-              </span>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+              FIVSYS helps Indian SMEs and startups automate operations, boost revenue, and reduce manual work using AI-powered solutions.
             </p>
+
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                <MapPin className="w-4 h-4 text-fivsys-red" />
+                <span className="text-gray-300">Serving Indian Businesses</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                <IndianRupee className="w-4 h-4 text-fivsys-red" />
+                <span className="text-gray-300">Affordable INR Pricing</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                <Zap className="w-4 h-4 text-fivsys-red" />
+                <span className="text-gray-300">Fast Remote Delivery</span>
+              </div>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Button asChild size="lg" className="bg-fivsys-red hover:bg-fivsys-darkRed text-white px-8 py-4 h-auto text-lg font-semibold">
                 <Link to="/contact" className="flex items-center gap-3">
                   <Brain className="w-5 h-5" />
-                  <span>Start Your AI Journey</span>
+                  <span>Book Free Consultation</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-2 border-white/20 hover:border-fivsys-red hover:bg-fivsys-red/10 px-8 py-4 h-auto text-lg font-semibold">
-                <Link to="/services/web-development" className="flex items-center gap-2">
+                <Link to="/#services" className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
-                  <span>Explore Services</span>
+                  <span>View Services</span>
                 </Link>
               </Button>
             </div>
@@ -197,11 +211,11 @@ const Index = () => {
               <span className="text-sm font-semibold text-fivsys-red">AI-POWERED SERVICES</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Intelligent Solutions for </span>
-              <span className="text-fivsys-red">Modern Business</span>
+              <span className="text-white">AI Solutions for </span>
+              <span className="text-fivsys-red">Indian Businesses</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Comprehensive AI-driven services designed to accelerate growth and optimize performance across all business verticals.
+              Comprehensive AI-driven services designed specifically for Indian SMEs and startups to accelerate growth and automate operations.
             </p>
           </div>
 
@@ -424,8 +438,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why FIVSYS for India Section */}
+      <section className="py-20 bg-gradient-to-b from-black to-fivsys-darkGray/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
+              <Target className="w-4 h-4 text-fivsys-red" />
+              <span className="text-sm font-semibold text-fivsys-red">WHY CHOOSE FIVSYS</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Built for </span>
+              <span className="text-fivsys-red">Indian Success</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Indian Customer Focus", description: "Solutions optimized for Indian customer behavior and market dynamics", icon: <Target className="w-8 h-8" /> },
+              { title: "Affordable INR Pricing", description: "Transparent pricing in ₹ INR tailored for Indian business budgets", icon: <IndianRupee className="w-8 h-8" /> },
+              { title: "Indian SME Experience", description: "Deep experience working with spas, clinics, shops, and agencies across India", icon: <Users className="w-8 h-8" /> },
+              { title: "IST Timezone Support", description: "Support available Mon-Sat, 9 AM - 8 PM IST with quick response times", icon: <Headphones className="w-8 h-8" /> }
+            ].map((item, index) => (
+              <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-fivsys-red/20 rounded-full flex items-center justify-center mx-auto mb-4 text-fivsys-red group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-gray-300 text-sm">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Use Cases Section */}
-      <section id="use-cases" className="py-20 bg-gradient-to-br from-black to-fivsys-darkGray/30">
+      <section id="use-cases" className="py-20 bg-gradient-to-br from-fivsys-darkGray/20 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
@@ -436,14 +485,17 @@ const Index = () => {
               <span className="text-white">Perfect for Indian </span>
               <span className="text-fivsys-red">Businesses</span>
             </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Real results for Indian businesses across multiple industries
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Spas & Salons", description: "Automated booking, WhatsApp reminders, customer management", icon: <Sparkles className="w-8 h-8" /> },
-              { title: "Clinics & Doctors", description: "Appointment scheduling, patient communication, AI assistance", icon: <Users className="w-8 h-8" /> },
-              { title: "Local Shops", description: "Online presence, inventory updates, customer engagement", icon: <Globe className="w-8 h-8" /> },
-              { title: "Agencies", description: "Lead capture, client portals, automated workflows", icon: <TrendingUp className="w-8 h-8" /> }
+              { title: "Spas & Salons", description: "Automated booking, WhatsApp reminders, customer management", result: "Reduced response time by 60%", icon: <Sparkles className="w-8 h-8" /> },
+              { title: "Clinics & Doctors", description: "Appointment scheduling, patient communication, AI assistance", result: "Saved 40+ hours/month", icon: <Users className="w-8 h-8" /> },
+              { title: "Local Shops", description: "Online presence, inventory updates, customer engagement", result: "Increased leads by 45%", icon: <Globe className="w-8 h-8" /> },
+              { title: "Agencies", description: "Lead capture, client portals, automated workflows", result: "35% higher conversion", icon: <TrendingUp className="w-8 h-8" /> }
             ].map((useCase, index) => (
               <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all group">
                 <CardContent className="p-6 text-center">
@@ -451,13 +503,19 @@ const Index = () => {
                     {useCase.icon}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{useCase.title}</h3>
-                  <p className="text-gray-300 text-sm">{useCase.description}</p>
+                  <p className="text-gray-300 text-sm mb-3">{useCase.description}</p>
+                  <div className="text-fivsys-red font-semibold text-sm bg-fivsys-red/10 px-3 py-1 rounded-full inline-block">
+                    {useCase.result}
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Blog Teaser Section */}
+      <BlogTeaser />
 
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-black">

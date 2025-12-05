@@ -4,7 +4,7 @@ import { useState } from 'react';
 const WhatsAppWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const phoneNumber = '917356137106'; // WhatsApp number without + or spaces
-  const message = 'Hello! I would like to know more about your AI-powered solutions.';
+  const message = 'Hi FIVSYS, I\'m interested in AI automation services for my business in India.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -46,17 +46,22 @@ const WhatsAppWidget = () => {
           </div>
         )}
         
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="group relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 flex items-center justify-center animate-float"
-          aria-label="Open WhatsApp chat"
-        >
-          <div className="absolute inset-0 bg-green-500/20 rounded-full blur-xl animate-pulse"></div>
-          <MessageCircle className="w-8 h-8 text-white relative z-10 group-hover:scale-110 transition-transform duration-300" />
-          
-          {/* Notification Dot */}
-          <div className="absolute top-0 right-0 w-4 h-4 bg-fivsys-red rounded-full border-2 border-black animate-gentle-glow"></div>
-        </button>
+        <div className="flex flex-col items-end gap-2">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="group relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 flex items-center justify-center animate-float"
+            aria-label="Open WhatsApp chat"
+          >
+            <div className="absolute inset-0 bg-green-500/20 rounded-full blur-xl animate-pulse"></div>
+            <MessageCircle className="w-8 h-8 text-white relative z-10 group-hover:scale-110 transition-transform duration-300" />
+            
+            {/* Notification Dot */}
+            <div className="absolute top-0 right-0 w-4 h-4 bg-fivsys-red rounded-full border-2 border-black animate-gentle-glow"></div>
+          </button>
+          <span className="text-xs text-white bg-black/80 px-2 py-1 rounded-full border border-green-500/30 whitespace-nowrap">
+            Chat on WhatsApp
+          </span>
+        </div>
       </div>
     </>
   );

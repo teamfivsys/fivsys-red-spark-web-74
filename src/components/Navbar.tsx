@@ -91,7 +91,7 @@ const Navbar = () => {
               >
                 <Link to="/contact" className="flex items-center space-x-2">
                   <Brain className="w-4 h-4" />
-                  <span>Get Started</span>
+                  <span>Get Free Consultation</span>
                 </Link>
               </Button>
             </div>
@@ -170,7 +170,7 @@ const Navbar = () => {
             >
               <Link to="/contact" onClick={() => setIsOpen(false)} className="flex items-center justify-center space-x-2">
                 <Brain className="w-4 h-4" />
-                <span>Get Started</span>
+                <span>Get Free Consultation</span>
               </Link>
             </Button>
           </div>
