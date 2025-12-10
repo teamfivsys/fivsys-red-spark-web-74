@@ -6,11 +6,11 @@ const DigitalMarketing = () => {
   return (
     <ServiceLayout
       title="Digital Marketing"
-      description="Data-driven digital marketing strategies that increase your online visibility and drive measurable results."
+      description="Data-driven digital marketing strategies that increase your online visibility. As a leading SEO company Kerala businesses trust, we help achieve Google ranking across Kerala through expert SEO services."
       icon={<BarChart3 className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Digital Marketing Services | SEO, PPC, Content Marketing | Fivsys"
-      seoDescription="AI-powered digital marketing services in Bangalore. SEO, SEM, PPC advertising, content marketing, email campaigns, analytics, and conversion optimization."
-      seoKeywords="digital marketing Bangalore, SEO services, PPC advertising, content marketing, email marketing, social media marketing, Google Ads, conversion optimization"
+      seoTitle="Digital Marketing Kerala | SEO Company Kerala | SEO Expert Kochi | Fivsys"
+      seoDescription="Top SEO company Kerala offering expert digital marketing services. Trusted SEO consultant Kochi and SEO agency Kerala for Google ranking improvement across Kerala. കേരള SEO സർവീസ്."
+      seoKeywords="SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, SEO consultant Kochi, SEO agency Kerala, digital branding Kerala, കേരള SEO സർവീസ്, ബിസിനസ് ഓൺലൈൻ പ്രമോഷൻ കേരളം"
       features={[
         "Search Engine Optimization (SEO)",
         "Pay-Per-Click (PPC) Advertising",

@@ -12,9 +12,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'fivsys | AI-Powered Development & Marketing Solutions',
-  description = 'Transform your Indian business with fivsys AI-powered website development, WhatsApp automation, chatbots, and digital marketing services in Bangalore.',
-  keywords = 'AI development India, website development Bangalore, WhatsApp automation, AI chatbots, app development India, web applications, digital marketing services, automation for Indian businesses',
+  title = 'fivsys | Website Development Company in Kerala | Web Design & SEO Kerala',
+  description = 'Leading website development company in Kerala offering affordable web design, SEO services, and digital marketing in Kochi, Trivandrum, Calicut. കേരള വെബ്സൈറ്റ് കമ്പനി. AI-powered solutions for Indian businesses.',
+  keywords = 'website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, SEO consultant Kochi, SEO agency Kerala, branding agency Kerala, logo design Kerala, digital branding Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കേരള SEO സർവീസ്, AI development India, website development Bangalore, WhatsApp automation, AI chatbots',
   image = 'https://fivsys.com/og-image.jpg',
   type = 'website',
   schemaType = 'WebPage',
@@ -23,14 +23,14 @@ const SEO = ({
   const location = useLocation();
   const currentUrl = `https://fivsys.com${location.pathname}`;
 
-  // Organization Schema
+  // Organization Schema with Kerala areaServed
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "fivsys",
     "url": "https://fivsys.com",
     "logo": "https://fivsys.com/favicon.ico",
-    "description": "AI-Powered Development & Marketing Solutions",
+    "description": "Kerala's trusted website development company offering AI-powered web design, SEO services, and digital marketing across Kochi, Trivandrum, Calicut and all India.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Goondhu -2, Behind Sreenidhi Regency, Sri Ganesh PG Road, Kasavanhalli",
@@ -49,10 +49,30 @@ const SEO = ({
       "https://twitter.com/fivsys",
       "https://instagram.com/fivsys",
       "https://linkedin.com/company/fivsys"
+    ],
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Kerala",
+        "addressCountry": "IN"
+      },
+      { "@type": "City", "name": "Kochi", "addressCountry": "IN" },
+      { "@type": "City", "name": "Thiruvananthapuram", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kozhikode", "addressCountry": "IN" },
+      { "@type": "City", "name": "Thrissur", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kannur", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kollam", "addressCountry": "IN" },
+      { "@type": "City", "name": "Alappuzha", "addressCountry": "IN" },
+      { "@type": "City", "name": "Palakkad", "addressCountry": "IN" },
+      { "@type": "City", "name": "Malappuram", "addressCountry": "IN" },
+      { "@type": "City", "name": "Bangalore", "addressCountry": "IN" },
+      { "@type": "City", "name": "Chennai", "addressCountry": "IN" },
+      { "@type": "City", "name": "Mumbai", "addressCountry": "IN" },
+      { "@type": "City", "name": "Delhi", "addressCountry": "IN" }
     ]
   };
 
-  // LocalBusiness Schema
+  // LocalBusiness Schema with Kerala areaServed
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -72,10 +92,21 @@ const SEO = ({
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "09:00",
-      "closes": "18:00"
-    }
+      "closes": "20:00"
+    },
+    "areaServed": [
+      { "@type": "State", "name": "Kerala" },
+      { "@type": "City", "name": "Kochi" },
+      { "@type": "City", "name": "Thiruvananthapuram" },
+      { "@type": "City", "name": "Kozhikode" },
+      { "@type": "City", "name": "Thrissur" },
+      { "@type": "City", "name": "Kannur" },
+      { "@type": "City", "name": "Kollam" },
+      { "@type": "State", "name": "Karnataka" },
+      { "@type": "City", "name": "Bangalore" }
+    ]
   };
 
   // WebSite Schema with SearchAction

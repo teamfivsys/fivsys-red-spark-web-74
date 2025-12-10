@@ -6,11 +6,11 @@ const WebDevelopment = () => {
   return (
     <ServiceLayout
       title="Web Development"
-      description="Custom AI-powered websites designed to convert visitors into customers, with stunning visuals and seamless functionality."
+      description="Custom AI-powered websites designed to convert visitors into customers. As a leading web design company Kerala, we offer affordable website design for businesses across Kochi, Trivandrum, and Calicut."
       icon={<Globe className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="AI Web Development Services | Custom Websites | Fivsys Bangalore"
-      seoDescription="Expert AI-powered web development services in Bangalore. Custom websites, responsive design, CMS, e-commerce, PWA, SEO optimization, and maintenance services."
-      seoKeywords="web development Bangalore, AI website development, custom website design, responsive web design, e-commerce development, CMS development, PWA development, website SEO"
+      seoTitle="Web Development Kerala | Website Development Company Kochi, Trivandrum | Fivsys"
+      seoDescription="Leading web design company Kerala offering affordable website design, WordPress development, and e-commerce solutions. Trusted web developers Kochi and Trivandrum businesses rely on. കേരള വെബ്സൈറ്റ് കമ്പനി."
+      seoKeywords="website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, കേരള വെബ്സൈറ്റ് കമ്പനി, കൊച്ചി വെബ് ഡിസൈൻ"
       features={[
         "Custom website design and development",
         "Responsive and mobile-friendly layouts",

@@ -12,42 +12,42 @@ import BlogTeaser from '@/components/BlogTeaser';
 const services = [
   {
     title: "AI Web Development",
-    description: "Enterprise-grade websites powered by artificial intelligence with advanced user experience and conversion optimization.",
+    description: "Enterprise-grade websites powered by AI. Leading web design company Kerala with affordable website design for businesses in Kochi, Trivandrum, and Calicut.",
     icon: <Globe className="h-8 w-8 text-fivsys-red" />,
     link: "/services/web-development",
     features: ["AI-Powered Design", "Smart Analytics", "Auto-Optimization"]
   },
   {
     title: "Intelligent App Development",
-    description: "Cross-platform mobile applications with machine learning integration and intelligent user interfaces.",
+    description: "Cross-platform mobile applications with machine learning integration. Trusted app developers in Kerala and across India.",
     icon: <Smartphone className="h-8 w-8 text-fivsys-red" />,
     link: "/services/app-development",
     features: ["ML Integration", "Cross-Platform", "Smart UI/UX"]
   },
   {
     title: "AI-Powered Web Apps",
-    description: "Scalable web applications with advanced backend systems and intelligent automation capabilities.",
+    description: "Scalable web applications with advanced backend systems. E-commerce website Kerala specialists with intelligent automation capabilities.",
     icon: <Code className="h-8 w-8 text-fivsys-red" />,
     link: "/services/web-app-development",
     features: ["AI Automation", "Scalable Architecture", "Smart Backend"]
   },
   {
     title: "AI-Driven Marketing",
-    description: "Data-driven digital marketing strategies with predictive analytics and automated campaign optimization.",
+    description: "Expert SEO company Kerala helping businesses achieve Google ranking Kerala-wide. Data-driven digital marketing strategies with predictive analytics.",
     icon: <BarChart3 className="h-8 w-8 text-fivsys-red" />,
     link: "/services/digital-marketing",
     features: ["Predictive Analytics", "Auto-Optimization", "ROI Tracking"]
   },
   {
     title: "Smart Social Media",
-    description: "AI-enhanced social media management with intelligent content creation and audience targeting.",
+    description: "AI-enhanced social media management. Digital branding Kerala experts with intelligent content creation and audience targeting.",
     icon: <Share2 className="h-8 w-8 text-fivsys-red" />,
     link: "/services/social-media-marketing",
     features: ["AI Content", "Smart Targeting", "Engagement Analytics"]
   },
   {
     title: "AI Sales Strategy",
-    description: "Intelligent sales automation with predictive lead scoring and conversion optimization systems.",
+    description: "Intelligent sales automation with predictive lead scoring. Branding agency Kerala specialists helping businesses boost conversions.",
     icon: <TrendingUp className="h-8 w-8 text-fivsys-red" />,
     link: "/services/sales-strategy",
     features: ["Lead Scoring", "Sales Automation", "Conversion AI"]
@@ -65,58 +65,50 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <SEO 
-        title="fivsys | AI-Powered Development & Marketing Solutions"
-        description="Transform your Indian business with fivsys AI-powered website development, WhatsApp automation, chatbots, and digital marketing services in Bangalore."
-        keywords="AI development India, website development Bangalore, WhatsApp automation, AI chatbots, app development India, web applications, digital marketing services, automation for Indian businesses"
+        title="fivsys | Website Development Company in Kerala | Web Design & SEO Kerala"
+        description="Leading website development company in Kerala offering affordable web design, SEO services, and digital marketing in Kochi, Trivandrum, Calicut. കേരള വെബ്സൈറ്റ് കമ്പനി. Trusted by Indian SMEs."
+        keywords="website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, branding agency Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കേരള SEO സർവീസ്"
         schemaType="WebPage"
         faqItems={[
           {
+            question: "Do you work with businesses in Kerala?",
+            answer: "Yes! FIVSYS is a leading website development company in Kerala. We serve businesses across Kochi, Trivandrum (Thiruvananthapuram), Calicut (Kozhikode), Thrissur, and all Kerala districts with affordable web design and SEO services."
+          },
+          {
+            question: "What is the cost of website development in Kerala?",
+            answer: "As an affordable website design Kerala provider, we offer packages starting from ₹15,000 for basic websites. E-commerce website Kerala solutions start from ₹35,000. We're the best value web developers Kochi and Trivandrum businesses trust."
+          },
+          {
+            question: "Do you provide SEO services in Kerala?",
+            answer: "Yes! We're a trusted SEO company Kerala businesses rely on. Our SEO expert Kerala team helps with Google ranking Kerala-wide through comprehensive digital marketing Kerala strategies."
+          },
+          {
             question: "What is AI-powered website development?",
-            answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences that adapt to your customers' needs."
+            answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences. As a leading web design company Kerala, we integrate AI to help businesses stand out."
           },
           {
             question: "How does WhatsApp automation help my business?",
-            answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically - saving you time while improving customer satisfaction."
+            answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically. Perfect for Kerala businesses looking to automate customer service."
           },
           {
             question: "What businesses benefit most from your services?",
-            answer: "Indian small to medium businesses like spas, salons, clinics, local shops, service providers, and agencies see the most impact. Any business wanting to automate and grow digitally benefits."
+            answer: "Kerala small to medium businesses like spas in Kochi, salons, clinics in Trivandrum, local shops in Calicut, service providers, and agencies see the most impact. Any Kerala business wanting to automate and grow digitally benefits."
           },
           {
-            question: "How long does it take to build a website?",
-            answer: "Basic websites take 2-3 weeks, while complex AI-powered solutions take 4-8 weeks. We provide regular updates and can adjust timelines based on your launch requirements."
+            question: "Do you offer branding and logo design in Kerala?",
+            answer: "Yes! As a branding agency Kerala businesses trust, we offer logo design Kerala services and digital branding Kerala packages. Complete brand identity solutions for businesses across Kochi, Trivandrum, Calicut and beyond."
           },
           {
             question: "Do you provide support after launch?",
-            answer: "Yes! All our plans include support periods (3-6 months). We offer 24/7 AI-powered monitoring and quick response times for any issues or updates you need."
-          },
-          {
-            question: "Can I upgrade my plan later?",
-            answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
-          },
-          {
-            question: "What is the cost of website development in India?",
-            answer: "Website costs vary based on complexity. Basic websites start from ₹15,000, business websites from ₹35,000, and AI-powered solutions from ₹75,000. We offer flexible payment plans for all budgets."
-          },
-          {
-            question: "Do you work with clients outside Bangalore?",
-            answer: "Yes! While we're based in Bangalore, we work with clients across India and internationally. All our communication and project management is handled digitally for seamless collaboration."
-          },
-          {
-            question: "What technologies do you use?",
-            answer: "We use modern technologies including React, Node.js, Python for AI/ML, cloud platforms like AWS and Google Cloud, and integrate with popular tools like WhatsApp Business API, payment gateways, and CRM systems."
+            answer: "Yes! All our plans include support periods (3-6 months). We offer IST timezone support Mon-Sat, 9 AM - 8 PM with quick response times for Kerala clients."
           },
           {
             question: "Can you help with SEO and digital marketing?",
-            answer: "Absolutely! We offer comprehensive digital marketing services including SEO, Google Ads, social media marketing, and content marketing to help your business grow online and attract more customers."
+            answer: "Absolutely! We're an SEO expert Kerala businesses rely on. We offer comprehensive digital marketing Kerala services including SEO, Google ranking Kerala optimization, social media marketing, and content marketing."
           },
           {
             question: "Do you provide website maintenance services?",
-            answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month."
-          },
-          {
-            question: "What payment methods do you accept?",
-            answer: "We accept all major payment methods including bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards, and PayPal for international clients. We also offer EMI options for larger projects."
+            answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month for Kerala businesses."
           }
         ]}
       />
@@ -141,28 +133,28 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="block text-white mb-2">AI Automation &</span>
               <span className="block bg-gradient-to-r from-fivsys-red via-white to-fivsys-red bg-clip-text text-transparent">
-                Development for India
+                Development for Kerala & India
               </span>
             </h1>
 
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              FIVSYS helps Indian SMEs and startups automate operations, boost revenue, and reduce manual work using AI-powered solutions.
+              FIVSYS helps businesses across Kerala and India automate operations, boost revenue, and reduce manual work. Trusted website development company in Kerala with affordable web design and SEO services.
             </p>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
                 <MapPin className="w-4 h-4 text-fivsys-red" />
-                <span className="text-gray-300">Serving Indian Businesses</span>
+                <span className="text-gray-300">Serving Kerala & All India</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
                 <IndianRupee className="w-4 h-4 text-fivsys-red" />
                 <span className="text-gray-300">Affordable INR Pricing</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
-                <Zap className="w-4 h-4 text-fivsys-red" />
-                <span className="text-gray-300">Fast Remote Delivery</span>
+                <Globe className="w-4 h-4 text-fivsys-red" />
+                <span className="text-gray-300">Web Design Company Kerala</span>
               </div>
             </div>
 
@@ -212,10 +204,10 @@ const Index = () => {
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               <span className="text-white">AI Solutions for </span>
-              <span className="text-fivsys-red">Indian Businesses</span>
+              <span className="text-fivsys-red">Kerala & Indian Businesses</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Comprehensive AI-driven services designed specifically for Indian SMEs and startups to accelerate growth and automate operations.
+              Comprehensive AI-driven services designed specifically for businesses in Kerala and across India. Leading web design company Kerala with expert SEO services in Kochi, Trivandrum, and Calicut.
             </p>
           </div>
 
@@ -448,16 +440,16 @@ const Index = () => {
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               <span className="text-white">Built for </span>
-              <span className="text-fivsys-red">Indian Success</span>
+              <span className="text-fivsys-red">Kerala & Indian Success</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Indian Customer Focus", description: "Solutions optimized for Indian customer behavior and market dynamics", icon: <Target className="w-8 h-8" /> },
-              { title: "Affordable INR Pricing", description: "Transparent pricing in ₹ INR tailored for Indian business budgets", icon: <IndianRupee className="w-8 h-8" /> },
-              { title: "Indian SME Experience", description: "Deep experience working with spas, clinics, shops, and agencies across India", icon: <Users className="w-8 h-8" /> },
-              { title: "IST Timezone Support", description: "Support available Mon-Sat, 9 AM - 8 PM IST with quick response times", icon: <Headphones className="w-8 h-8" /> }
+              { title: "Kerala & Indian Focus", description: "Solutions optimized for Kerala and Indian customer behavior - from Kochi to Trivandrum to Calicut", icon: <Target className="w-8 h-8" /> },
+              { title: "Affordable Kerala Pricing", description: "കുറച്ച് വിലക്ക് വെബ്സൈറ്റ് ഡിസൈൻ - Affordable website design Kerala with transparent ₹ INR pricing", icon: <IndianRupee className="w-8 h-8" /> },
+              { title: "Kerala SME Experience", description: "Deep experience with Kerala businesses - spas in Kochi, clinics in Trivandrum, shops in Calicut", icon: <Users className="w-8 h-8" /> },
+              { title: "IST Timezone Support", description: "Support available Mon-Sat, 9 AM - 8 PM IST with quick response times for Kerala clients", icon: <Headphones className="w-8 h-8" /> }
             ].map((item, index) => (
               <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all group">
                 <CardContent className="p-6 text-center">
@@ -482,20 +474,20 @@ const Index = () => {
               <span className="text-sm font-semibold text-fivsys-red">SUCCESS STORIES</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Perfect for Indian </span>
+              <span className="text-white">Perfect for Kerala & Indian </span>
               <span className="text-fivsys-red">Businesses</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Real results for Indian businesses across multiple industries
+              Real results for businesses across Kerala - from Kochi to Trivandrum to Calicut and all India
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Spas & Salons", description: "Automated booking, WhatsApp reminders, customer management", result: "Reduced response time by 60%", icon: <Sparkles className="w-8 h-8" /> },
-              { title: "Clinics & Doctors", description: "Appointment scheduling, patient communication, AI assistance", result: "Saved 40+ hours/month", icon: <Users className="w-8 h-8" /> },
-              { title: "Local Shops", description: "Online presence, inventory updates, customer engagement", result: "Increased leads by 45%", icon: <Globe className="w-8 h-8" /> },
-              { title: "Agencies", description: "Lead capture, client portals, automated workflows", result: "35% higher conversion", icon: <TrendingUp className="w-8 h-8" /> }
+              { title: "Spas & Salons Kerala", description: "Automated booking for Kochi spas, WhatsApp reminders, customer management", result: "Reduced response time by 60%", icon: <Sparkles className="w-8 h-8" /> },
+              { title: "Clinics & Doctors", description: "Appointment scheduling for Trivandrum clinics, patient communication, AI assistance", result: "Saved 40+ hours/month", icon: <Users className="w-8 h-8" /> },
+              { title: "Local Shops Kerala", description: "E-commerce website Kerala, online presence for Calicut shops, inventory updates", result: "Increased leads by 45%", icon: <Globe className="w-8 h-8" /> },
+              { title: "Agencies Kerala", description: "Lead capture for Kerala agencies, client portals, automated workflows", result: "35% higher conversion", icon: <TrendingUp className="w-8 h-8" /> }
             ].map((useCase, index) => (
               <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10 hover:border-fivsys-red/50 transition-all group">
                 <CardContent className="p-6 text-center">
@@ -534,52 +526,56 @@ const Index = () => {
           <div className="space-y-4">
             {[
               {
+                question: "Do you work with businesses in Kerala?",
+                answer: "Yes! FIVSYS is a leading website development company in Kerala. We serve businesses across Kochi, Trivandrum (Thiruvananthapuram), Calicut (Kozhikode), Thrissur, and all Kerala districts with affordable web design and SEO services. കേരള വെബ്സൈറ്റ് കമ്പനി."
+              },
+              {
+                question: "What is the cost of website development in Kerala?",
+                answer: "As an affordable website design Kerala provider, we offer packages starting from ₹15,000 for basic websites. E-commerce website Kerala solutions start from ₹35,000. We're known as the best value web developers Kochi and Trivandrum businesses trust. കുറച്ച് വിലക്ക് വെബ്സൈറ്റ് ഡിസൈൻ."
+              },
+              {
+                question: "Do you provide SEO services in Kerala?",
+                answer: "Yes! We're a trusted SEO company Kerala businesses rely on. Our SEO expert Kerala team helps with Google ranking Kerala-wide through comprehensive digital marketing Kerala strategies. SEO consultant Kochi and SEO agency Kerala services available. കേരള SEO സർവീസ്."
+              },
+              {
+                question: "കേരളത്തിൽ വെബ്സൈറ്റ് ഡെവലപ്മെന്റ് സേവനങ്ങൾ നൽകുന്നുണ്ടോ?",
+                answer: "അതെ! ഞങ്ങൾ കേരള വെബ്സൈറ്റ് കമ്പനി ആണ്. കൊച്ചി വെബ് ഡിസൈൻ, കേരള SEO സർവീസ്, കുറച്ച് വിലക്ക് വെബ്സൈറ്റ് ഡിസൈൻ എന്നിവ ഞങ്ങൾ നൽകുന്നു. ബിസിനസ് ഓൺലൈൻ പ്രമോഷൻ കേരളം മുഴുവൻ."
+              },
+              {
                 question: "What is AI-powered website development?",
-                answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences that adapt to your customers' needs."
+                answer: "We build websites enhanced with artificial intelligence features like chatbots, automated customer service, smart analytics, and personalized user experiences. As a leading web design company Kerala, we integrate AI to help businesses in Kochi, Trivandrum, and Calicut stand out."
               },
               {
                 question: "How does WhatsApp automation help my business?",
-                answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically - saving you time while improving customer satisfaction."
+                answer: "WhatsApp automation handles customer queries 24/7, sends appointment reminders, processes orders, and manages bookings automatically. Perfect for Kerala businesses looking to automate customer service."
               },
               {
                 question: "What businesses benefit most from your services?",
-                answer: "Indian small to medium businesses like spas, salons, clinics, local shops, service providers, and agencies see the most impact. Any business wanting to automate and grow digitally benefits."
+                answer: "Kerala small to medium businesses like spas in Kochi, salons, clinics in Trivandrum, local shops in Calicut, service providers, and agencies see the most impact. Any Kerala business wanting to automate and grow digitally benefits."
               },
               {
                 question: "How long does it take to build a website?",
-                answer: "Basic websites take 2-3 weeks, while complex AI-powered solutions take 4-8 weeks. We provide regular updates and can adjust timelines based on your launch requirements."
+                answer: "Basic websites take 2-3 weeks, while complex AI-powered solutions take 4-8 weeks. We provide regular updates for Kerala clients and can adjust timelines based on your launch requirements."
               },
               {
                 question: "Do you provide support after launch?",
-                answer: "Yes! All our plans include support periods (3-6 months). We offer 24/7 AI-powered monitoring and quick response times for any issues or updates you need."
+                answer: "Yes! All our plans include support periods (3-6 months). We offer IST timezone support Mon-Sat, 9 AM - 8 PM with quick response times for Kerala clients."
               },
               {
-                question: "Can I upgrade my plan later?",
-                answer: "Absolutely! Start with our Starter plan and upgrade anytime as your business grows. We make the transition seamless with no disruption to your operations."
-              },
-              {
-                question: "What is the cost of website development in India?",
-                answer: "Website costs vary based on complexity. Basic websites start from ₹15,000, business websites from ₹35,000, and AI-powered solutions from ₹75,000. We offer flexible payment plans for all budgets."
-              },
-              {
-                question: "Do you work with clients outside Bangalore?",
-                answer: "Yes! While we're based in Bangalore, we work with clients across India and internationally. All our communication and project management is handled digitally for seamless collaboration."
-              },
-              {
-                question: "What technologies do you use?",
-                answer: "We use modern technologies including React, Node.js, Python for AI/ML, cloud platforms like AWS and Google Cloud, and integrate with popular tools like WhatsApp Business API, payment gateways, and CRM systems."
+                question: "Do you offer branding and logo design in Kerala?",
+                answer: "Yes! As a branding agency Kerala businesses trust, we offer logo design Kerala services and digital branding Kerala packages. Complete brand identity solutions for businesses across Kochi, Trivandrum, Calicut and beyond."
               },
               {
                 question: "Can you help with SEO and digital marketing?",
-                answer: "Absolutely! We offer comprehensive digital marketing services including SEO, Google Ads, social media marketing, and content marketing to help your business grow online and attract more customers."
+                answer: "Absolutely! We're an SEO expert Kerala businesses rely on. We offer comprehensive digital marketing Kerala services including SEO, Google ranking Kerala optimization, social media marketing, and content marketing to help your business grow online."
               },
               {
                 question: "Do you provide website maintenance services?",
-                answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month."
+                answer: "Yes, we offer monthly maintenance packages that include security updates, performance optimization, content updates, backup management, and technical support starting from ₹5,000/month for Kerala businesses."
               },
               {
                 question: "What payment methods do you accept?",
-                answer: "We accept all major payment methods including bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards, and PayPal for international clients. We also offer EMI options for larger projects."
+                answer: "We accept all major payment methods including bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards suitable for Kerala businesses. We also offer EMI options for larger projects."
               }
             ].map((faq, index) => (
               <Card key={index} className="bg-gradient-to-br from-fivsys-darkGray/50 to-black border-white/10">

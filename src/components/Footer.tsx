@@ -176,10 +176,13 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-2 text-sm text-fivsys-red font-semibold">
               <MapPin className="w-4 h-4" />
-              <span>Proudly Serving Businesses Across India</span>
+              <span>Proudly Serving Businesses Across Kerala & India</span>
             </div>
             <p className="text-gray-500 text-xs text-center">
-              Bangalore • Mumbai • Delhi • Chennai • Hyderabad • Pune • Kolkata
+              Kochi • Trivandrum • Calicut • Thrissur • Kannur • Bangalore • Chennai • Mumbai
+            </p>
+            <p className="text-gray-600 text-xs text-center">
+              Kerala's Trusted Web Design & SEO Partner | കേരള വെബ്സൈറ്റ് കമ്പനി
             </p>
             <div className="flex flex-col md:flex-row items-center justify-between w-full pt-4">
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
