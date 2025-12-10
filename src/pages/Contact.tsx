@@ -90,9 +90,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <SEO 
-        title="Contact Fivsys | Get in Touch for AI Solutions | +91 7356137106"
-        description="Contact Fivsys for AI-powered development and marketing solutions. Located in Bangalore. Call +91 7356137106 or email info@fivsys.com for enterprise consultations."
-        keywords="contact fivsys, AI solutions Bangalore, web development contact, digital marketing inquiry, Sarjapura Bangalore, enterprise solutions India"
+        title="Contact Fivsys | Website Development Company Kerala | Get Free Quote"
+        description="Contact Kerala's leading web design company for affordable website design, SEO services, and digital marketing. Free consultation for businesses in Kochi, Trivandrum, Calicut. കേരള വെബ്സൈറ്റ് കമ്പനി."
+        keywords="contact fivsys, web design company Kerala, affordable website design Kerala, SEO company Kerala, website development Kerala contact, web developers Kochi, web development Trivandrum"
         schemaType="ContactPage"
       />
       <GeometricBackground />

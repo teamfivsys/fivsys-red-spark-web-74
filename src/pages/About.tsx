@@ -34,9 +34,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <SEO 
-        title="About Fivsys | AI-Powered Development Company in Bangalore"
-        description="Learn about Fivsys - pioneers in AI-powered web development, app development, and digital marketing solutions. Our story, values, and commitment to innovation."
-        keywords="about fivsys, AI company Bangalore, web development company, digital transformation, innovation, technology company India"
+        title="About Fivsys | Web Design Company Kerala | Digital Marketing Agency Kochi"
+        description="Learn about Fivsys - Kerala's trusted website development company and SEO agency. Serving businesses in Kochi, Trivandrum, Calicut with affordable web design and digital marketing services. കേരള വെബ്സൈറ്റ് കമ്പനി."
+        keywords="about fivsys, web design company Kerala, branding agency Kerala, digital marketing Kerala, website development company in Kerala, SEO company Kerala, logo design Kerala"
         schemaType="AboutPage"
       />
       <Navbar />
@@ -48,7 +48,7 @@ const About = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Fivsys</h1>
             <p className="text-xl text-fivsys-silver mb-8">
-              Innovative AI-powered solutions to help businesses thrive in the digital world.
+              Innovative AI-powered solutions helping Kerala and Indian businesses thrive in the digital world. Trusted web design company Kerala since inception.
             </p>
           </div>
         </div>
@@ -61,13 +61,13 @@ const About = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-fivsys-silver mb-6">
-                Founded with a vision to bridge the gap between cutting-edge technology and business growth, Fivsys has evolved into a comprehensive digital solutions provider.
+                Founded with a vision to bridge the gap between cutting-edge technology and business growth, Fivsys has evolved into a comprehensive digital solutions provider and trusted website development company in Kerala.
               </p>
               <p className="text-fivsys-silver mb-6">
-                Our journey began with a simple idea: to harness the power of artificial intelligence to create websites and applications that not only look stunning but also drive measurable results for businesses of all sizes.
+                Our journey began with a simple idea: to harness the power of artificial intelligence to create websites and applications that not only look stunning but also drive measurable results for businesses of all sizes across Kerala and India.
               </p>
               <p className="text-fivsys-silver">
-                Today, we have expanded our services to include a full spectrum of digital solutions, from web and app development to digital marketing and sales strategy, all powered by the latest AI technologies.
+                Today, we proudly serve businesses across Kerala - from startups in Kochi to established enterprises in Trivandrum and Calicut - as a trusted web design company Kerala offering affordable website design, comprehensive SEO services, and digital marketing solutions powered by the latest AI technologies.
               </p>
             </div>
             <div className="relative">
