@@ -245,8 +245,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold mb-3 text-2xl text-white group-hover:text-fivsys-red transition-colors">Strategic Partnerships</h3>
                       <p className="text-fivsys-silver text-lg">
-                        <a href="mailto:info@fivsys.com" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
-                          info@fivsys.com
+                        <a href="mailto:hello@fivsys.com" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
+                          hello@fivsys.com
                         </a>
                         <br />
                         <span className="text-sm text-fivsys-silver/80">Enterprise Solutions</span>

@@ -164,8 +164,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center group">
                 <Mail size={18} className="text-fivsys-red mr-3 flex-shrink-0 group-hover:animate-gentle-glow transition-all duration-300" />
-                <a href="mailto:info@fivsys.com" className="text-gray-400 hover:text-fivsys-red transition-colors duration-300">
-                  info@fivsys.com
+                <a href="mailto:hello@fivsys.com" className="text-gray-400 hover:text-fivsys-red transition-colors duration-300">
+                  hello@fivsys.com
                 </a>
               </li>
             </ul>

@@ -42,7 +42,7 @@ const SEO = ({
       "@type": "ContactPoint",
       "telephone": "+91-7356137106",
       "contactType": "Customer Service",
-      "email": "info@fivsys.com"
+      "email": "hello@fivsys.com"
     },
     "sameAs": [
       "https://facebook.com/fivsys",
