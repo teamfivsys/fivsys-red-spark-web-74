@@ -15,7 +15,7 @@ const SEO = ({
   title = 'fivsys | Website Development Company in Kerala | Web Design & SEO Kerala',
   description = 'Leading website development company in Kerala offering affordable web design, SEO services, and digital marketing in Kochi, Trivandrum, Calicut. കേരള വെബ്സൈറ്റ് കമ്പനി. AI-powered solutions for Indian businesses.',
   keywords = 'website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, SEO consultant Kochi, SEO agency Kerala, branding agency Kerala, logo design Kerala, digital branding Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കേരള SEO സർവീസ്, AI development India, website development Bangalore, WhatsApp automation, AI chatbots',
-  image = 'https://fivsys.com/og-image.jpg',
+  image = 'https://fivsys.com/assets/social-preview.jpg',
   type = 'website',
   schemaType = 'WebPage',
   faqItems = [],
@@ -164,6 +164,8 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="fivsys" />
 
       {/* Twitter */}
