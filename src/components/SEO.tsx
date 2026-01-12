@@ -33,16 +33,17 @@ const SEO = ({
     "description": "Kerala's trusted website development company offering AI-powered web design, SEO services, and digital marketing across Kochi, Trivandrum, Calicut and all India.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Goondhu -2, Behind Sreenidhi Regency, Sri Ganesh PG Road, Kasavanhalli",
-      "addressLocality": "Sarjapura, Bangalore",
-      "postalCode": "560035",
+      "streetAddress": "Olap House, Near Balabadhra Temple, Perandoor, Elamakara",
+      "addressLocality": "Ernakulam",
+      "addressRegion": "Kerala",
+      "postalCode": "682026",
       "addressCountry": "IN"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-7356137106",
       "contactType": "Customer Service",
-      "email": "hello@fivsys.com"
+      "email": "teamfivsys@gmail.com"
     },
     "sameAs": [
       "https://facebook.com/fivsys",
@@ -85,9 +86,10 @@ const SEO = ({
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Goondhu -2, Behind Sreenidhi Regency, Sri Ganesh PG Road, Kasavanhalli",
-      "addressLocality": "Sarjapura, Bangalore",
-      "postalCode": "560035",
+      "streetAddress": "Olap House, Near Balabadhra Temple, Perandoor, Elamakara",
+      "addressLocality": "Ernakulam",
+      "addressRegion": "Kerala",
+      "postalCode": "682026",
       "addressCountry": "IN"
     },
     "openingHoursSpecification": {

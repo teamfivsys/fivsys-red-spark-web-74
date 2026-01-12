@@ -208,10 +208,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold mb-3 text-2xl text-white group-hover:text-fivsys-red transition-colors">Global Innovation Hub</h3>
                       <p className="text-fivsys-silver leading-relaxed text-lg">
-                        Goondhu -2, Behind Sreenidhi Regency<br />
-                        Sri Ganesh PG Road, Kasavanhalli<br />
-                        Sarjapura, Bangalore - 560035<br />
-                        <span className="text-fivsys-red font-semibold">India's Silicon Valley</span>
+                        Olap House, Near Balabadhra Temple<br />
+                        Perandoor, Elamakara<br />
+                        Ernakulam - 682026, Kerala<br />
+                        <span className="text-fivsys-red font-semibold">India's Tech Coast</span>
                       </p>
                     </div>
                   </div>
@@ -245,8 +245,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold mb-3 text-2xl text-white group-hover:text-fivsys-red transition-colors">Strategic Partnerships</h3>
                       <p className="text-fivsys-silver text-lg">
-                        <a href="mailto:hello@fivsys.com" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
-                          hello@fivsys.com
+                        <a href="mailto:teamfivsys@gmail.com" className="hover:text-fivsys-red transition-colors text-2xl font-semibold">
+                          teamfivsys@gmail.com
                         </a>
                         <br />
                         <span className="text-sm text-fivsys-silver/80">Enterprise Solutions</span>
