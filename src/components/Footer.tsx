@@ -151,9 +151,9 @@ const Footer = () => {
               <li className="flex items-start group">
                 <MapPin size={18} className="text-fivsys-red mr-3 mt-0.5 flex-shrink-0 group-hover:animate-gentle-glow transition-all duration-300" />
                 <span className="text-gray-400 group-hover:text-white transition-colors duration-300">
-                  Goondhu -2, Behind Sreenidhi Regency<br />
-                  Sri Ganesh PG Road, Kasavanhalli<br />
-                  Sarjapura, Bangalore - 560035
+                  Olap House, Near Balabadhra Temple<br />
+                  Perandoor, Elamakara<br />
+                  Ernakulam - 682026, Kerala
                 </span>
               </li>
               <li className="flex items-center group">
@@ -164,8 +164,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center group">
                 <Mail size={18} className="text-fivsys-red mr-3 flex-shrink-0 group-hover:animate-gentle-glow transition-all duration-300" />
-                <a href="mailto:hello@fivsys.com" className="text-gray-400 hover:text-fivsys-red transition-colors duration-300">
-                  hello@fivsys.com
+                <a href="mailto:teamfivsys@gmail.com" className="text-gray-400 hover:text-fivsys-red transition-colors duration-300">
+                  teamfivsys@gmail.com
                 </a>
               </li>
             </ul>
