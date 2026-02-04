@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Zap, Brain } from 'lucide-react';
+import { Menu, X, Brain } from 'lucide-react';
+import fivsysLogo from '@/assets/fivsys-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,28 +29,14 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Enhanced Logo with new design */}
+          {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center space-x-3 group">
-              {/* Logo icon inspired by the uploaded image */}
-              <div className="relative">
-                <div className="w-10 h-10 bg-fivsys-red rounded-md flex items-center justify-center group-hover:animate-gentle-glow transition-all duration-300">
-                  <div className="space-y-1">
-                    <div className="w-6 h-1 bg-white rounded-full"></div>
-                    <div className="w-4 h-1 bg-white rounded-full"></div>
-                    <div className="w-5 h-1 bg-white rounded-full"></div>
-                  </div>
-                </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Brain className="w-2 h-2 text-fivsys-red m-0.5" />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <span className="text-2xl font-bold text-white group-hover:text-fivsys-red transition-colors duration-300">
-                  fivsys
-                </span>
-                <Zap className="w-4 h-4 text-fivsys-red ml-1 animate-pulse" />
-              </div>
+            <Link to="/" className="flex items-center group">
+              <img 
+                src={fivsysLogo} 
+                alt="Fivsys - AI-Powered Development & Marketing" 
+                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
+              />
             </Link>
           </div>
           
