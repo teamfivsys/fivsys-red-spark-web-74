@@ -35,7 +35,7 @@ const Navbar = () => {
               <img 
                 src={fivsysLogo} 
                 alt="Fivsys - AI-Powered Development & Marketing" 
-                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
+                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300 brightness-110 drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]"
               />
             </Link>
           </div>
