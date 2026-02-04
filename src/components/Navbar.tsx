@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg border-b border-fivsys-red/20' : 'bg-transparent'
+        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' : 'bg-white/90 backdrop-blur-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,7 +35,7 @@ const Navbar = () => {
               <img 
                 src={fivsysLogo} 
                 alt="Fivsys - AI-Powered Development & Marketing" 
-                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300 brightness-110 drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]"
+                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
               />
             </Link>
           </div>
@@ -43,31 +43,31 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <Link to="/#services" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/#services" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 Services
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/#how-it-works" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/#how-it-works" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 How It Works
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/#pricing" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/#pricing" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 Pricing
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/#faq" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/#faq" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 FAQ
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/blog" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/blog" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 Blog
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/about" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/about" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 About
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-fivsys-red transition-colors duration-300 relative group">
+              <Link to="/contact" className="text-gray-700 hover:text-fivsys-red transition-colors duration-300 relative group">
                 Contact
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-fivsys-red group-hover:w-full transition-all duration-300"></div>
               </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-fivsys-red/20 focus:outline-none transition-colors duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-fivsys-red hover:bg-fivsys-red/10 focus:outline-none transition-colors duration-300"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -100,52 +100,52 @@ const Navbar = () => {
       {/* Enhanced Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/98 backdrop-blur-md border-t border-fivsys-red/20">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/98 backdrop-blur-md border-t border-gray-200">
             <Link 
               to="/#services"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Services
             </Link>
             <Link 
               to="/#how-it-works"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </Link>
             <Link 
               to="/#pricing"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Pricing
             </Link>
             <Link 
               to="/#faq"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               FAQ
             </Link>
             <Link 
               to="/blog"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Blog
             </Link>
             <Link 
               to="/about"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link 
               to="/contact"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-fivsys-red/20 hover:text-fivsys-red transition-colors duration-300"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Contact
