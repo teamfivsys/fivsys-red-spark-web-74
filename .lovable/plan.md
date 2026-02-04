@@ -1,79 +1,85 @@
 
 
-## Plan: Update Favicon and Fix Logo Visibility
+## Plan: Change Header to White/Light Gray
 
 ### Summary
-Update the favicon to use the new logo and fix the visibility issue where the logo is not showing on the black header background.
+Update the navbar header from black to white/light gray background to make your logo clearly visible. This will give your site a clean, professional look.
 
 ---
 
 ### Changes Overview
 
-#### 1. Update Favicon (index.html + public folder)
+#### 1. Update Navbar Background (`src/components/Navbar.tsx`)
 
-**Copy logo to public directory:**
-- Copy `src/assets/fivsys-logo.png` to `public/favicon.png`
+**Line 26-28 - Main header background:**
 
-**Update index.html (lines 79-81):**
+| State | Current | New |
+|-------|---------|-----|
+| Scrolled | `bg-black/95 backdrop-blur-md shadow-lg border-b border-fivsys-red/20` | `bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200` |
+| Not Scrolled | `bg-transparent` | `bg-white/90 backdrop-blur-md` |
+
+**Line 38 - Logo styling:**
+- Remove the brightness/drop-shadow filters since they're no longer needed on a light background
+
 | Current | New |
 |---------|-----|
-| `<link rel="icon" type="image/x-icon" href="/favicon.ico" />` | `<link rel="icon" type="image/png" href="/favicon.png" />` |
-| `<link rel="apple-touch-icon" href="/favicon.ico" />` | `<link rel="apple-touch-icon" href="/favicon.png" />` |
+| `brightness-110 drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]` | (remove these classes) |
 
-**Update schema logo (line 90):**
+**Lines 46-72 - Navigation links:**
+- Change text color from gray/white to dark for readability on light background
+
 | Current | New |
 |---------|-----|
-| `"logo": "https://fivsys.com/favicon.ico"` | `"logo": "https://fivsys.com/favicon.png"` |
+| `text-gray-300 hover:text-fivsys-red` | `text-gray-700 hover:text-fivsys-red` |
+
+**Line 91 - Mobile menu button:**
+
+| Current | New |
+|---------|-----|
+| `text-gray-400 hover:text-white hover:bg-fivsys-red/20` | `text-gray-600 hover:text-fivsys-red hover:bg-fivsys-red/10` |
 
 ---
 
-#### 2. Fix Logo Visibility in Navbar (src/components/Navbar.tsx)
+#### 2. Update Mobile Menu (`src/components/Navbar.tsx`)
 
-**Problem:** The logo has dark elements that blend into the black header background.
+**Line 103 - Mobile menu container:**
 
-**Solution (line 38):** Add CSS filter to brighten the logo or add a subtle glow effect to make it stand out on the dark background.
+| Current | New |
+|---------|-----|
+| `bg-black/98 backdrop-blur-md border-t border-fivsys-red/20` | `bg-white/98 backdrop-blur-md border-t border-gray-200` |
 
-```text
-Current:
-className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
+**Lines 104-152 - Mobile menu links:**
 
-New:
-className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300 brightness-110 drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]"
-```
-
-This adds:
-- `brightness-110` - slightly increases logo brightness
-- `drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]` - adds a subtle red glow matching brand color
+| Current | New |
+|---------|-----|
+| `text-white hover:bg-fivsys-red/20 hover:text-fivsys-red` | `text-gray-700 hover:bg-fivsys-red/10 hover:text-fivsys-red` |
 
 ---
 
-#### 3. Fix Logo Visibility in Footer (src/components/Footer.tsx)
+### Summary of Changes
 
-**Solution (line 27):** Apply the same enhancement for consistency.
-
-```text
-Current:
-className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
-
-New:
-className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300 brightness-110 drop-shadow-[0_0_8px_rgba(223,37,49,0.5)]"
-```
+| Element | Before | After |
+|---------|--------|-------|
+| Header background | Black/transparent | White with blur |
+| Navigation text | Light gray | Dark gray |
+| Mobile menu | Black | White |
+| Logo filters | Brightness + glow | Natural appearance |
+| Border color | Red accent | Light gray |
 
 ---
 
 ### Files Modified
 
-| File | Change |
-|------|--------|
-| `public/favicon.png` | New file (copy of logo) |
-| `index.html` | Update favicon references (lines 79-81, 90) |
-| `src/components/Navbar.tsx` | Add brightness and glow to logo (line 38) |
-| `src/components/Footer.tsx` | Add brightness and glow to logo (line 27) |
+| File | Lines Changed |
+|------|---------------|
+| `src/components/Navbar.tsx` | Lines 26-28, 38, 46-72, 91, 103-152 |
 
 ---
 
-### Technical Notes
-- Using PNG format for favicon provides better quality than ICO for modern browsers
-- The `drop-shadow` uses the brand red color (#df2531 = rgba(223,37,49)) for consistent branding
-- If the logo still isn't visible after these changes, we may need to add a white/light version of the logo specifically for dark backgrounds
+### Visual Result
+- Clean white header that contrasts with your logo
+- Dark navigation text for readability
+- Brand red hover effects maintained
+- Professional, modern SaaS appearance
+- Logo will be clearly visible without any color adjustments
 
