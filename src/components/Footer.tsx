@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Brain, Zap, Sparkles } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Brain, Zap } from 'lucide-react';
+import fivsysLogo from '@/assets/fivsys-logo.png';
 
 const Footer = () => {
   return (
@@ -17,22 +18,14 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Enhanced Company & Logo */}
+          {/* Company & Logo */}
           <div>
             <Link to="/" className="flex items-center mb-6 group">
-              <div className="w-10 h-10 bg-fivsys-red rounded-md flex items-center justify-center group-hover:animate-gentle-glow transition-all duration-300 mr-3">
-                <div className="space-y-1">
-                  <div className="w-6 h-1 bg-white rounded-full"></div>
-                  <div className="w-4 h-1 bg-white rounded-full"></div>
-                  <div className="w-5 h-1 bg-white rounded-full"></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <span className="text-2xl font-bold text-white group-hover:text-fivsys-red transition-colors duration-300">
-                  fivsys
-                </span>
-                <Sparkles className="w-4 h-4 text-fivsys-red ml-1 animate-gentle-glow" />
-              </div>
+              <img 
+                src={fivsysLogo} 
+                alt="Fivsys - AI-Powered Development & Marketing" 
+                className="h-10 w-auto group-hover:opacity-80 transition-opacity duration-300"
+              />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Revolutionary AI-powered development and intelligent marketing solutions designed to transform your business and accelerate growth in the digital era.
@@ -110,7 +103,7 @@ const Footer = () => {
           {/* Enhanced Quick Links */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Sparkles className="w-5 h-5 text-fivsys-red animate-gentle-glow" />
+              <Zap className="w-5 h-5 text-fivsys-red animate-gentle-glow" />
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Company</h3>
             </div>
             <ul className="space-y-3">
