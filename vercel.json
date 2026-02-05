@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/:path((?!www).*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "source": "/(.*).(?:jpg|jpeg|png|gif|svg|webp|ico)",
+      "source": "/(.*)\\.(jpg|jpeg|png|gif|svg|webp|ico)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "source": "/(.*).(?:js|css)",
+      "source": "/(.*)\\.(js|css)",
       "headers": [
         {
           "key": "Cache-Control",
