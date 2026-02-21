@@ -78,12 +78,16 @@ const SEO = ({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "fivsys",
+    "alternateName": "fivsys.com - Glocal Digital Agency Kerala",
     "image": image,
-    "description": description,
+    "description": "Kerala's premier Glocal digital agency offering AI-powered web development, app development, MLM solutions, SEO, and digital marketing in Kochi, Trivandrum, Kozhikode, Thrissur and globally.",
     "@id": "https://fivsys.com",
     "url": "https://fivsys.com",
     "telephone": "+91-7356137106",
-    "priceRange": "$$",
+    "email": "teamfivsys@gmail.com",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "UPI, Bank Transfer, Credit Card, Debit Card",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Olap House, Near Balabadhra Temple, Perandoor, Elamakara",
@@ -92,22 +96,45 @@ const SEO = ({
       "postalCode": "682026",
       "addressCountry": "IN"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "10.0159",
+      "longitude": "76.3419"
+    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "09:00",
       "closes": "20:00"
     },
+    "serviceType": [
+      "Web Development Kerala",
+      "App Development Kerala",
+      "MLM Software Development",
+      "SEO Services Kerala",
+      "Digital Marketing Kerala",
+      "Social Media Marketing Kerala",
+      "Branding Agency Kerala"
+    ],
     "areaServed": [
-      { "@type": "State", "name": "Kerala" },
-      { "@type": "City", "name": "Kochi" },
-      { "@type": "City", "name": "Thiruvananthapuram" },
-      { "@type": "City", "name": "Kozhikode" },
-      { "@type": "City", "name": "Thrissur" },
-      { "@type": "City", "name": "Kannur" },
-      { "@type": "City", "name": "Kollam" },
-      { "@type": "State", "name": "Karnataka" },
-      { "@type": "City", "name": "Bangalore" }
+      { "@type": "State", "name": "Kerala", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kochi", "addressCountry": "IN" },
+      { "@type": "City", "name": "Thiruvananthapuram", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kozhikode", "addressCountry": "IN" },
+      { "@type": "City", "name": "Thrissur", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kannur", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kollam", "addressCountry": "IN" },
+      { "@type": "City", "name": "Palakkad", "addressCountry": "IN" },
+      { "@type": "City", "name": "Malappuram", "addressCountry": "IN" },
+      { "@type": "State", "name": "Karnataka", "addressCountry": "IN" },
+      { "@type": "City", "name": "Bangalore", "addressCountry": "IN" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "sameAs": [
+      "https://facebook.com/fivsys",
+      "https://twitter.com/fivsys",
+      "https://instagram.com/fivsys",
+      "https://linkedin.com/company/fivsys"
     ]
   };
 

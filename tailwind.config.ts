@@ -55,12 +55,14 @@ export default {
 				},
                 fivsys: {
                     black: '#000000',
-                    red: '#df2531',
-                    darkRed: '#a91d26',
+                    midnight: '#020617',
+                    red: '#E11D48',
+                    darkRed: '#9F1239',
                     burgundy: '#7a1419',
                     silver: '#ffffff',
-                    darkGray: '#1a1a1a',
+                    darkGray: '#0f172a',
                     lightGray: '#f5f5f5',
+                    slate: '#1e293b',
                 },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
