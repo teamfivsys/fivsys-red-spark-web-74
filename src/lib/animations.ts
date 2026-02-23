@@ -67,7 +67,7 @@ export const cardHover = {
   hover: {
     scale: 1.05,
     boxShadow: '0 0 30px rgba(225, 29, 72, 0.35), 0 0 60px rgba(225, 29, 72, 0.15)',
-    transition: { type: 'spring', mass: 0.4, stiffness: 200, damping: 20 },
+    transition: { type: 'spring' as const, mass: 0.4, stiffness: 200, damping: 20 },
   },
 };
 
