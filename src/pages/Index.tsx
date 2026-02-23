@@ -174,34 +174,34 @@ const Index = () => {
               <span className="text-sm text-slate-300">Kerala & The World</span>
             </motion.div>
 
-            <div className="mb-6 overflow-hidden">
-              <motion.div
+            <div className="mb-6">
+              <motion.h1
                 variants={letterRevealContainer}
                 initial="hidden"
                 animate="visible"
                 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
-                style={{ perspective: 800 }}
               >
-                {HEADLINE.split('').map((char, i) => (
-                  <motion.span
-                    key={i}
-                    variants={letterRevealItem}
-                    className={char === ' ' ? 'inline-block w-[0.25em]' : `inline-block ${char === 'K' && i > 30 ? 'text-fivsys-red' : ''}`}
-                    style={{
-                      color: HEADLINE.slice(i, i + 6) === 'Kerala' || HEADLINE.slice(i, i + 5) === 'World' ? '#E11D48' : undefined,
-                    }}
-                  >
-                    {char === ' ' ? '\u00A0' : char}
-                  </motion.span>
-                ))}
-              </motion.div>
+                {HEADLINE.split(' ').map((word, i) => {
+                  const redWords = ['Kerala', 'World.'];
+                  return (
+                    <span key={i} className="inline-block mr-[0.2em] last:mr-0 overflow-hidden">
+                      <motion.span
+                        variants={letterRevealItem}
+                        className={`inline-block ${redWords.includes(word) ? 'text-fivsys-red' : ''}`}
+                      >
+                        {word}
+                      </motion.span>
+                    </span>
+                  );
+                })}
+              </motion.h1>
             </div>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: 'spring', mass: 0.5, delay: 1.4 }}
-              className="text-lg md:text-xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed"
+              className="text-base md:text-lg lg:text-xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0"
             >
               FIVSYS helps businesses across Kerala and beyond automate, grow, and dominate — with AI-powered web, app, SEO, and MLM solutions crafted for both local and global markets.
             </motion.p>
