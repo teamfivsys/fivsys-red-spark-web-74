@@ -19,7 +19,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-12-01',
     readTime: '8 min read',
-    image: '/blog/whatsapp-automation.jpg',
+    image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'WhatsApp automation India, WhatsApp business API Bangalore, automated customer service India',
     tags: ['WhatsApp', 'Automation', 'SMB', 'India', 'Bangalore']
   },
@@ -31,7 +31,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-11-28',
     readTime: '10 min read',
-    image: '/blog/ai-chatbots.jpg',
+    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'AI chatbots India, customer service automation, AI for small business India',
     tags: ['AI', 'Chatbots', 'Customer Service', 'ROI']
   },
@@ -43,7 +43,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-11-25',
     readTime: '12 min read',
-    image: '/blog/digital-marketing.jpg',
+    image: 'https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'digital marketing India, startup marketing strategies, SEO for Indian business',
     tags: ['Marketing', 'SEO', 'Social Media', 'Startups']
   },
@@ -55,7 +55,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-11-22',
     readTime: '7 min read',
-    image: '/blog/website-cost.jpg',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'website cost India, web development pricing Bangalore, affordable website India',
     tags: ['Website', 'Pricing', 'Business', 'Development']
   },
@@ -67,7 +67,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-11-18',
     readTime: '9 min read',
-    image: '/blog/social-media.jpg',
+    image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'social media marketing India, Instagram marketing local business, Facebook ads India',
     tags: ['Social Media', 'Instagram', 'Facebook', 'Local Business']
   },
@@ -79,7 +79,7 @@ export const blogPosts = [
     author: 'Fivsys Team',
     date: '2025-11-15',
     readTime: '11 min read',
-    image: '/blog/ai-tools.jpg',
+    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
     keywords: 'AI tools India, productivity tools entrepreneurs, automation tools Indian business',
     tags: ['AI', 'Tools', 'Productivity', 'Entrepreneurs']
   }

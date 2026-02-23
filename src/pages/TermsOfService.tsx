@@ -73,7 +73,7 @@ const TermsOfService = () => {
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Governing Law</h2>
             <p className="text-fivsys-silver">
-              These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.
+              These Terms shall be governed by and construed in accordance with the laws of India, and specifically the laws of the State of Kerala, without regard to its conflict of law provisions. Any disputes shall be subject to the exclusive jurisdiction of courts located in Kerala, India.
             </p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">Changes to Terms</h2>
