@@ -1,4 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/((?!assets|favicon|og-image|placeholder|robots|sitemap).*)", "destination": "/index.html" }
+  ],
   "redirects": [
     {
       "source": "/:path*",
