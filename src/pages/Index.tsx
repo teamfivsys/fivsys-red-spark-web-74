@@ -243,11 +243,11 @@ const Index = () => {
                   </Link>
                 </Button>
               </MagneticButton>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border border-white/15 hover:border-fivsys-red/50 hover:bg-fivsys-red/5 bg-transparent text-white px-8 py-4 h-auto text-base font-semibold transition-all duration-300">
-                <Link to="/#services" className="flex items-center justify-center gap-2">
+              <Button variant="outline" size="lg" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })} className="w-full sm:w-auto border border-white/15 hover:border-fivsys-red/50 hover:bg-fivsys-red/5 bg-transparent text-white px-8 py-4 h-auto text-base font-semibold transition-all duration-300 cursor-pointer">
+                <div className="flex items-center justify-center gap-2">
                   <Sparkles className="w-4 h-4" />
                   <span>View Services</span>
-                </Link>
+                </div>
               </Button>
             </motion.div>
 
