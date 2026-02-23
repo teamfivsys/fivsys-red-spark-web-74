@@ -104,7 +104,7 @@ const LeadForm = () => {
     setLoading(true);
     setError('');
     const allData = { ...formData, ...form3.getValues() };
-    const { error: dbError } = await supabase.from('leads').insert([{
+    const leadPayload = {
       name: allData.name ?? '',
       email: allData.email ?? '',
       phone: allData.phone ?? '',
@@ -112,14 +112,20 @@ const LeadForm = () => {
       service_interest: allData.service_interest ?? '',
       budget_range: allData.budget_range ?? '',
       project_details: allData.project_details ?? '',
-    }]);
+    };
+
+    const { error: dbError } = await supabase.from('leads').insert([leadPayload]);
+
+    if (dbError) {
+      setLoading(false);
+      setError('Something went wrong. Please try again or contact us directly.');
+      return;
+    }
+
+    supabase.functions.invoke('send-lead-email', { body: leadPayload }).catch(() => {});
 
     setLoading(false);
-    if (dbError) {
-      setError('Something went wrong. Please try again or contact us directly.');
-    } else {
-      setSubmitted(true);
-    }
+    setSubmitted(true);
   };
 
   if (submitted) {
@@ -217,7 +223,7 @@ const LeadForm = () => {
                   <Briefcase className="w-3.5 h-3.5 text-fivsys-red" />
                   Service Interest
                 </Label>
-                <div className="grid grid-cols-2 gap-2.5 mt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-2">
                   {services.map((service) => {
                     const selected = form2.watch('service_interest') === service;
                     return (
@@ -260,7 +266,7 @@ const LeadForm = () => {
                     <IndianRupee className="w-3.5 h-3.5 text-fivsys-red" />
                     Budget Range
                   </Label>
-                  <div className="grid grid-cols-2 gap-2.5 mt-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-2">
                     {budgets.map((budget) => {
                       const selected = form3.watch('budget_range') === budget;
                       return (

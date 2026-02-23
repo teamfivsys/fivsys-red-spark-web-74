@@ -14,7 +14,6 @@ import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import BlogTeaser from '@/components/BlogTeaser';
 import KeralaMarketSection from '@/components/KeralaMarketSection';
-import LeadForm from '@/components/LeadForm';
 import MagneticButton from '@/components/MagneticButton';
 import {
   springSlideUp,
@@ -180,7 +179,7 @@ const Index = () => {
                 variants={letterRevealContainer}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
+                className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
                 style={{ perspective: 800 }}
               >
                 {HEADLINE.split('').map((char, i) => (
@@ -211,7 +210,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: 'spring', mass: 0.5, delay: 1.6 }}
-              className="flex flex-wrap justify-center gap-3 mb-10"
+              className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-3 mb-10"
             >
               {[
                 { icon: <MapPin className="w-4 h-4 text-fivsys-red" />, text: 'Kochi · Trivandrum · Calicut' },
@@ -229,19 +228,19 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: 'spring', mass: 0.5, delay: 1.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-20"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-16 sm:mb-20 px-4 sm:px-0"
             >
               <MagneticButton strength={0.25}>
-                <Button asChild size="lg" className="bg-fivsys-red hover:bg-fivsys-darkRed text-white px-8 py-4 h-auto text-base font-semibold shadow-xl shadow-fivsys-red/25 hover:shadow-fivsys-red/40 transition-all duration-300">
-                  <Link to="/contact" className="flex items-center gap-3">
+                <Button asChild size="lg" className="w-full sm:w-auto bg-fivsys-red hover:bg-fivsys-darkRed text-white px-8 py-4 h-auto text-base font-semibold shadow-xl shadow-fivsys-red/25 hover:shadow-fivsys-red/40 transition-all duration-300">
+                  <Link to="/contact" className="flex items-center justify-center gap-3">
                     <Zap className="w-5 h-5" />
                     <span>Book Free Consultation</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </Button>
               </MagneticButton>
-              <Button asChild variant="outline" size="lg" className="border border-white/15 hover:border-fivsys-red/50 hover:bg-fivsys-red/5 bg-transparent text-white px-8 py-4 h-auto text-base font-semibold transition-all duration-300">
-                <Link to="/#services" className="flex items-center gap-2">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border border-white/15 hover:border-fivsys-red/50 hover:bg-fivsys-red/5 bg-transparent text-white px-8 py-4 h-auto text-base font-semibold transition-all duration-300">
+                <Link to="/#services" className="flex items-center justify-center gap-2">
                   <Sparkles className="w-4 h-4" />
                   <span>View Services</span>
                 </Link>
@@ -252,16 +251,16 @@ const Index = () => {
               variants={springSlideUpStagger}
               initial="hidden"
               animate="visible"
-              className="grid grid-cols-2 md:grid-cols-4 gap-6"
+              className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
             >
               {stats.map((stat, i) => (
-                <motion.div key={i} variants={springSlideUp} className="text-center group">
+                <motion.div key={i} variants={springSlideUp} className="text-center group p-3 rounded-xl border border-white/5 hover:border-fivsys-red/20 transition-all duration-300">
                   <div className="flex items-center justify-center mb-3">
                     <div className="p-2.5 rounded-xl bg-fivsys-red/10 text-fivsys-red border border-fivsys-red/15 group-hover:bg-fivsys-red/20 group-hover:scale-110 transition-all duration-300">
                       {stat.icon}
                     </div>
                   </div>
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">{stat.number}</div>
+                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">{stat.number}</div>
                   <div className="text-xs text-slate-500 font-medium">{stat.label}</div>
                 </motion.div>
               ))}
@@ -597,49 +596,6 @@ const Index = () => {
       {/* Blog Teaser */}
       <BlogTeaser />
 
-      {/* Multi-Step Lead Form Section */}
-      <motion.section
-        variants={springSlideUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportOptions}
-        className="py-24 bg-gradient-to-b from-fivsys-midnight via-fivsys-darkGray/20 to-fivsys-midnight"
-        aria-label="Get a quote"
-        id="get-quote"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/10 mb-6">
-                <Zap className="w-4 h-4 text-fivsys-red" />
-                <span className="text-sm font-semibold text-fivsys-red uppercase tracking-widest">Start Your Project</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                Let's Build Something <span className="text-fivsys-red">Extraordinary</span>
-              </h2>
-              <p className="text-slate-400 mb-8 leading-relaxed">
-                Tell us about your vision. Our Glocal experts will craft a tailored strategy to grow your business in Kerala and beyond.
-              </p>
-              <div className="space-y-4">
-                {[
-                  { icon: <MapPin className="w-4 h-4 text-fivsys-red" />, text: 'Serving Kochi, Trivandrum, Kozhikode, Thrissur & All India' },
-                  { icon: <Clock className="w-4 h-4 text-fivsys-red" />, text: 'Response within 24 hours — Mon to Sat, 9AM–8PM IST' },
-                  { icon: <IndianRupee className="w-4 h-4 text-fivsys-red" />, text: 'Transparent INR pricing, no hidden costs' },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 text-sm text-slate-300">
-                    {item.icon}
-                    {item.text}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-slate-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-              <LeadForm />
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
       {/* Contact CTA Section */}
       <motion.section
         variants={springSlideUp}
@@ -652,30 +608,30 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-gradient-to-br from-fivsys-red/8 to-fivsys-darkGray/20 border border-fivsys-red/20 backdrop-blur-sm overflow-hidden relative">
             <div className="absolute inset-0 bg-gradient-to-br from-fivsys-red/5 via-transparent to-transparent pointer-events-none" />
-            <CardContent className="text-center p-12 md:p-16 relative">
+            <CardContent className="text-center p-8 sm:p-12 md:p-16 relative">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fivsys-red/30 bg-fivsys-red/15 mb-6">
                 <Zap className="w-4 h-4 text-fivsys-red" />
                 <span className="text-sm font-semibold text-fivsys-red uppercase tracking-widest">Ready to Transform?</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6">
                 <span className="text-white">Let's Build the </span>
                 <span className="text-fivsys-red">Future Together</span>
               </h2>
-              <p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Partner with Kerala's most trusted Glocal agency to build AI-powered digital solutions that compete locally and scale globally.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <MagneticButton strength={0.2}>
-                  <Button asChild size="lg" className="bg-fivsys-red hover:bg-fivsys-darkRed text-white px-10 py-4 h-auto text-base font-semibold shadow-xl shadow-fivsys-red/25">
-                    <Link to="/contact" className="flex items-center gap-3">
+                  <Button asChild size="lg" className="w-full sm:w-auto bg-fivsys-red hover:bg-fivsys-darkRed text-white px-10 py-4 h-auto text-base font-semibold shadow-xl shadow-fivsys-red/25">
+                    <Link to="/contact" className="flex items-center justify-center gap-3">
                       <Brain className="w-5 h-5" />
                       <span>Start Your Project</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </Button>
                 </MagneticButton>
-                <Button asChild variant="outline" size="lg" className="border border-white/15 hover:border-fivsys-red/40 hover:bg-fivsys-red/5 bg-transparent text-white px-10 py-4 h-auto text-base font-semibold transition-all duration-300">
-                  <Link to="/services/web-development" className="flex items-center gap-2">
+                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border border-white/15 hover:border-fivsys-red/40 hover:bg-fivsys-red/5 bg-transparent text-white px-10 py-4 h-auto text-base font-semibold transition-all duration-300">
+                  <Link to="/services/web-development" className="flex items-center justify-center gap-2">
                     <Cpu className="w-4 h-4" />
                     <span>View Services</span>
                   </Link>

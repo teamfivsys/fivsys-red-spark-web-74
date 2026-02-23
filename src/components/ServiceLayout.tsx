@@ -38,7 +38,7 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
   seoKeywords
 }) => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-fivsys-midnight text-white">
       <SEO 
         title={seoTitle || `${title} Services | Fivsys AI-Powered Solutions`}
         description={seoDescription || description}
@@ -55,8 +55,8 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
             <div className="flex justify-center mb-6">
               {icon}
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-            <p className="text-xl text-fivsys-silver mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">{title}</h1>
+            <p className="text-base md:text-xl text-fivsys-silver mb-8 px-2 sm:px-0">
               {description}
             </p>
             <Button asChild size="lg" className="bg-fivsys-red hover:bg-fivsys-red/90">
@@ -88,7 +88,7 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-fivsys-midnight">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefits</h2>
@@ -143,8 +143,8 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-fivsys-darkGray to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-fivsys-red/10 to-fivsys-darkGray border border-fivsys-silver/10 rounded-lg p-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{ctaText}</h2>
+          <div className="bg-gradient-to-r from-fivsys-red/10 to-fivsys-darkGray border border-fivsys-silver/10 rounded-lg p-6 sm:p-10 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{ctaText}</h2>
             <p className="text-fivsys-silver max-w-2xl mx-auto mb-8">
               Let's collaborate to create innovative {title.toLowerCase()} solutions that drive growth and success for your business.
             </p>

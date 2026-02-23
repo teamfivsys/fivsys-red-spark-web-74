@@ -64,7 +64,7 @@ const Navbar = () => {
               >
                 <Link to="/contact" className="flex items-center gap-2">
                   <Zap className="w-3.5 h-3.5" />
-                  <span>Get a Quote</span>
+                  <span>Contact Us</span>
                 </Link>
               </Button>
             </MagneticButton>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 >
                   <Link to="/contact" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-2">
                     <Zap className="w-4 h-4" />
-                    <span>Get a Quote</span>
+                    <span>Contact Us</span>
                   </Link>
                 </Button>
               </motion.div>
