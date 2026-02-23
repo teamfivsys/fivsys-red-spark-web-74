@@ -127,26 +127,30 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-fivsys-midnight text-white overflow-x-hidden">
       <SEO
-        title="fivsys | Glocal Digital Agency Kerala | Web Development, SEO & MLM Solutions"
-        description="fivsys.com — Kerala's premier Glocal digital agency. Expert web development, AI-powered SEO, MLM solutions and digital marketing in Kochi, Trivandrum, Kozhikode, Thrissur. Trusted globally."
-        keywords="website development company in Kerala, web design company Kerala, affordable website design Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, SEO company Kerala, SEO expert Kerala, digital marketing Kerala, MLM software Kerala, branding agency Kerala, glocal agency Kerala, fivsys"
+        title="fivsys | Best Web Design & Digital Marketing Company in Kerala | Kochi, Trivandrum, Calicut"
+        description="fivsys — Kerala's best Glocal digital agency. Affordable website development, SEO, app development, MLM software & digital marketing in Kochi, Trivandrum, Kozhikode, Thrissur, Kannur, Kollam & all Kerala districts."
+        keywords="best web design company in Kerala, website development company in Kerala, affordable website design Kerala, web developers Kochi, website design Kochi, web development Trivandrum, web design Calicut Kozhikode, web agency Thrissur, web design Kannur, website company Kollam Ernakulam, SEO company Kerala, SEO services Kochi, SEO expert Kerala, Google ranking Kerala, local SEO Kerala, digital marketing Kerala, Google Ads Kerala, Facebook marketing Kerala, app development Kerala, mobile app development Kochi, Android app development Kerala, MLM software company Kerala, network marketing software Kerala, e-commerce website Kerala, landing page design Kerala, branding agency Kerala, IT company Kerala, best digital agency Kerala, fivsys, hire web developer Kerala"
         schemaType="WebPage"
         faqItems={[
           {
-            question: 'Do you work with businesses in Kerala?',
-            answer: 'Yes! FIVSYS is a leading website development company in Kerala. We serve businesses across Kochi, Trivandrum (Thiruvananthapuram), Calicut (Kozhikode), Thrissur, and all Kerala districts.',
+            question: 'What is the best web design company in Kerala?',
+            answer: 'FIVSYS is one of Kerala\'s best website development companies, serving businesses in Kochi, Trivandrum (Thiruvananthapuram), Calicut (Kozhikode), Thrissur, Kannur, Kollam, Palakkad, Malappuram, and all 14 Kerala districts. We offer affordable, professional web design with proven results.',
           },
           {
-            question: 'What is the cost of website development in Kerala?',
-            answer: 'Our affordable Kerala web design packages start from ₹25,000. E-commerce solutions start from ₹35,000. We are the trusted web developers Kochi and Trivandrum businesses rely on.',
+            question: 'How much does website development cost in Kerala?',
+            answer: 'Our affordable Kerala web design packages start from ₹15,000 for business websites. E-commerce websites start from ₹35,000. Custom web apps from ₹60,000. We offer the best price-to-quality ratio among web design companies in Kochi and across Kerala.',
           },
           {
             question: 'Do you provide SEO services in Kerala?',
-            answer: 'Yes! We are a trusted SEO company Kerala businesses rely on. Our SEO expert Kerala team helps with Google ranking Kerala-wide through comprehensive digital marketing Kerala strategies.',
+            answer: 'Yes! We are a leading SEO company in Kerala with dedicated SEO experts in Kochi. Our services include local SEO, Google My Business optimization, on-page and off-page SEO, Google Ads, and full digital marketing for businesses across Kerala aiming for top Google rankings.',
           },
           {
-            question: 'Do you build MLM software?',
-            answer: 'Yes, we build custom MLM platforms with genealogy trees, commission engines, e-wallet integration, and member portals. Kerala and India-focused MLM software development.',
+            question: 'Do you build mobile apps and MLM software in Kerala?',
+            answer: 'Yes. We develop Android and iOS mobile apps for Kerala businesses starting from ₹50,000. We also build custom MLM software with genealogy trees, commission engines, e-wallet, and member portals — serving MLM companies across Kerala and India.',
+          },
+          {
+            question: 'Which cities in Kerala do you serve?',
+            answer: 'FIVSYS serves all of Kerala including Kochi (Ernakulam), Trivandrum (Thiruvananthapuram), Calicut (Kozhikode), Thrissur, Kannur, Kollam, Palakkad, Malappuram, Kottayam, Alappuzha, Idukki, Wayanad, Kasargod, and Pathanamthitta — plus clients across India and globally.',
           },
         ]}
       />

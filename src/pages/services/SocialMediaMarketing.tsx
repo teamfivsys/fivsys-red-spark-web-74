@@ -8,9 +8,9 @@ const SocialMediaMarketing = () => {
       title="Social Media Marketing"
       description="Strategic social media campaigns that build brand awareness and engage with your target audience."
       icon={<Share2 className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Social Media Marketing Services | Instagram, Facebook, LinkedIn | Fivsys"
-      seoDescription="Professional social media marketing services. Strategy, content creation, community management, influencer marketing, paid ads, and analytics for all platforms."
-      seoKeywords="social media marketing Bangalore, Instagram marketing, Facebook ads, LinkedIn marketing, social media strategy, influencer marketing, social media management"
+      seoTitle="Social Media Marketing Kerala | Instagram & Facebook Marketing Agency Kochi | Fivsys"
+      seoDescription="Best social media marketing agency in Kerala. Instagram marketing, Facebook Ads, YouTube promotion & influencer campaigns for businesses in Kochi, Trivandrum, Calicut, Thrissur and all Kerala districts."
+      seoKeywords="social media marketing Kerala, social media agency Kerala, Instagram marketing Kerala, Instagram marketing Kochi, Facebook marketing Kerala, Facebook Ads Kerala, YouTube marketing Kerala, social media management Kerala, social media marketing Kochi, social media Trivandrum, social media marketing Calicut, influencer marketing Kerala, content creation Kerala, reels marketing Kerala, WhatsApp marketing Kerala, social media strategy Kerala, best social media company Kerala, social media advertising Kerala, affordable social media Kerala"
       features={[
         "Social Media Strategy Development",
         "Platform Selection and Optimization",

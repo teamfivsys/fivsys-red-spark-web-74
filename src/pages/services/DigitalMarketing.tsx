@@ -8,9 +8,9 @@ const DigitalMarketing = () => {
       title="Digital Marketing"
       description="Data-driven digital marketing strategies that increase your online visibility. As a leading SEO company Kerala businesses trust, we help achieve Google ranking across Kerala through expert SEO services."
       icon={<BarChart3 className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Digital Marketing Kerala | SEO Company Kerala | SEO Expert Kochi | Fivsys"
-      seoDescription="Top SEO company Kerala offering expert digital marketing services. Trusted SEO consultant Kochi and SEO agency Kerala for Google ranking improvement across Kerala. കേരള SEO സർവീസ്."
-      seoKeywords="SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, SEO consultant Kochi, SEO agency Kerala, digital branding Kerala, കേരള SEO സർവീസ്, ബിസിനസ് ഓൺലൈൻ പ്രമോഷൻ കേരളം"
+      seoTitle="Best SEO Company in Kerala | Digital Marketing Agency Kochi, Trivandrum | Fivsys"
+      seoDescription="Best SEO company in Kerala. Expert SEO services, Google Ads, Facebook Ads, content marketing & local SEO for businesses in Kochi, Trivandrum, Calicut, Thrissur and across Kerala. Get to #1 on Google. കേരള SEO സർവീസ്."
+      seoKeywords="best SEO company in Kerala, SEO services Kerala, SEO company Kochi, SEO expert Kochi, digital marketing agency Kerala, digital marketing Kochi, digital marketing Trivandrum, Google ranking Kerala, local SEO Kerala, Google My Business Kerala, GMB optimization Kerala, Google Ads Kerala, Facebook Ads Kerala, Instagram marketing Kerala, content marketing Kerala, online marketing Kerala, SEO consultant Kerala, SEO agency Calicut, SEO services Thrissur, SEO services Kannur, SEO Ernakulam, affordable SEO Kerala, best digital marketing company Kerala, online advertising Kerala, PPC Kerala, കേരള SEO സർവീസ്, ഡിജിറ്റൽ മാർക്കറ്റിംഗ് കേരളം"
       features={[
         "Search Engine Optimization (SEO)",
         "Pay-Per-Click (PPC) Advertising",

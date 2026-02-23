@@ -14,7 +14,7 @@ interface SEOProps {
 const SEO = ({
   title = 'fivsys | Website Development Company in Kerala | Web Design & SEO Kerala',
   description = 'Leading website development company in Kerala offering affordable web design, SEO services, and digital marketing in Kochi, Trivandrum, Calicut. കേരള വെബ്സൈറ്റ് കമ്പനി. AI-powered solutions for Indian businesses.',
-  keywords = 'website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, SEO company Kerala, SEO expert Kerala, digital marketing Kerala, google ranking Kerala, SEO consultant Kochi, SEO agency Kerala, branding agency Kerala, logo design Kerala, digital branding Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കേരള SEO സർവീസ്, AI development India, website development Bangalore, WhatsApp automation, AI chatbots',
+  keywords = 'best web design company in Kerala, website development company in Kerala, affordable website design Kerala, web developers Kochi, web design Kochi, web development Trivandrum, web design Calicut Kozhikode, web agency Thrissur, web design Kannur, website company Kollam Ernakulam, web design Malappuram Palakkad, WordPress developer Kerala, e-commerce website Kerala, SEO company Kerala, SEO services Kochi, SEO expert Kerala, Google ranking Kerala, local SEO Kerala, digital marketing Kerala, Google Ads Kerala, Facebook marketing Kerala, app development Kerala, mobile app development Kochi, MLM software Kerala, social media marketing Kerala, branding agency Kerala, IT company Kerala, best digital agency Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കേരള SEO സർവീസ്, ഡിജിറ്റൽ മാർക്കറ്റിംഗ് കേരളം',
   image = 'https://fivsys.com/assets/social-preview.jpg',
   type = 'website',
   schemaType = 'WebPage',
@@ -52,12 +52,9 @@ const SEO = ({
       "https://linkedin.com/company/fivsys"
     ],
     "areaServed": [
-      {
-        "@type": "State",
-        "name": "Kerala",
-        "addressCountry": "IN"
-      },
+      { "@type": "State", "name": "Kerala", "addressCountry": "IN" },
       { "@type": "City", "name": "Kochi", "addressCountry": "IN" },
+      { "@type": "City", "name": "Ernakulam", "addressCountry": "IN" },
       { "@type": "City", "name": "Thiruvananthapuram", "addressCountry": "IN" },
       { "@type": "City", "name": "Kozhikode", "addressCountry": "IN" },
       { "@type": "City", "name": "Thrissur", "addressCountry": "IN" },
@@ -66,10 +63,16 @@ const SEO = ({
       { "@type": "City", "name": "Alappuzha", "addressCountry": "IN" },
       { "@type": "City", "name": "Palakkad", "addressCountry": "IN" },
       { "@type": "City", "name": "Malappuram", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kottayam", "addressCountry": "IN" },
+      { "@type": "City", "name": "Idukki", "addressCountry": "IN" },
+      { "@type": "City", "name": "Wayanad", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kasaragod", "addressCountry": "IN" },
+      { "@type": "City", "name": "Pathanamthitta", "addressCountry": "IN" },
       { "@type": "City", "name": "Bangalore", "addressCountry": "IN" },
       { "@type": "City", "name": "Chennai", "addressCountry": "IN" },
       { "@type": "City", "name": "Mumbai", "addressCountry": "IN" },
-      { "@type": "City", "name": "Delhi", "addressCountry": "IN" }
+      { "@type": "City", "name": "Delhi", "addressCountry": "IN" },
+      { "@type": "Country", "name": "India" }
     ]
   };
 
@@ -108,26 +111,44 @@ const SEO = ({
       "closes": "20:00"
     },
     "serviceType": [
-      "Web Development Kerala",
-      "App Development Kerala",
-      "MLM Software Development",
+      "Website Development Kerala",
+      "Web Design Kochi",
+      "Web Design Trivandrum",
+      "Web Design Calicut",
+      "Mobile App Development Kerala",
+      "Android App Development Kerala",
+      "iOS App Development Kerala",
+      "MLM Software Development Kerala",
       "SEO Services Kerala",
+      "Local SEO Kerala",
+      "Google Ads Kerala",
       "Digital Marketing Kerala",
       "Social Media Marketing Kerala",
-      "Branding Agency Kerala"
+      "Instagram Marketing Kerala",
+      "Facebook Ads Kerala",
+      "E-commerce Website Kerala",
+      "Branding Agency Kerala",
+      "Web App Development Kerala"
     ],
     "areaServed": [
       { "@type": "State", "name": "Kerala", "addressCountry": "IN" },
       { "@type": "City", "name": "Kochi", "addressCountry": "IN" },
+      { "@type": "City", "name": "Ernakulam", "addressCountry": "IN" },
       { "@type": "City", "name": "Thiruvananthapuram", "addressCountry": "IN" },
       { "@type": "City", "name": "Kozhikode", "addressCountry": "IN" },
       { "@type": "City", "name": "Thrissur", "addressCountry": "IN" },
       { "@type": "City", "name": "Kannur", "addressCountry": "IN" },
       { "@type": "City", "name": "Kollam", "addressCountry": "IN" },
+      { "@type": "City", "name": "Alappuzha", "addressCountry": "IN" },
       { "@type": "City", "name": "Palakkad", "addressCountry": "IN" },
       { "@type": "City", "name": "Malappuram", "addressCountry": "IN" },
-      { "@type": "State", "name": "Karnataka", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kottayam", "addressCountry": "IN" },
+      { "@type": "City", "name": "Idukki", "addressCountry": "IN" },
+      { "@type": "City", "name": "Wayanad", "addressCountry": "IN" },
+      { "@type": "City", "name": "Kasaragod", "addressCountry": "IN" },
+      { "@type": "City", "name": "Pathanamthitta", "addressCountry": "IN" },
       { "@type": "City", "name": "Bangalore", "addressCountry": "IN" },
+      { "@type": "City", "name": "Chennai", "addressCountry": "IN" },
       { "@type": "Country", "name": "India" }
     ],
     "sameAs": [

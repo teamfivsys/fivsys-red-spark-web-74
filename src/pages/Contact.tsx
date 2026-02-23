@@ -9,9 +9,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-fivsys-midnight text-white">
       <SEO
-        title="Contact Fivsys | Website Development Company Kerala | Get Free Quote"
-        description="Contact Kerala's leading web design company for affordable website design, SEO services, and digital marketing. Free consultation for businesses in Kochi, Trivandrum, Calicut."
-        keywords="contact fivsys, web design company Kerala, affordable website design Kerala, SEO company Kerala, website development Kerala contact, web developers Kochi, web development Trivandrum"
+        title="Contact Fivsys | Get Free Website & Digital Marketing Quote Kerala | Kochi, Trivandrum"
+        description="Contact Kerala's best web design & digital marketing company. Get a free quote for website development, SEO, app development & social media marketing in Kochi, Trivandrum, Calicut, Thrissur and all Kerala."
+        keywords="contact fivsys, free website quote Kerala, web design quote Kerala, website development enquiry Kerala, hire web developer Kerala, web design company contact Kochi, SEO company Kerala contact, digital marketing quote Kerala, affordable web design Kerala, get website designed Kerala, web development enquiry Trivandrum, contact web agency Calicut, best IT company Kerala contact"
         schemaType="ContactPage"
       />
       <GeometricBackground />

@@ -8,9 +8,9 @@ const SalesStrategy = () => {
       title="Sales Strategy"
       description="Comprehensive sales strategies that convert leads into loyal customers and maximize revenue growth."
       icon={<TrendingUp className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Sales Strategy Consulting | CRM, Lead Generation | Fivsys"
-      seoDescription="AI-driven sales strategy services. Sales process optimization, CRM implementation, lead generation, sales funnel design, team training, and performance tracking."
-      seoKeywords="sales strategy consulting, sales optimization, CRM implementation, lead generation, sales funnel, sales automation, B2B sales, sales training"
+      seoTitle="Sales Strategy & Lead Generation Services Kerala | CRM & Business Growth | Fivsys"
+      seoDescription="Expert sales strategy consulting for Kerala businesses. Lead generation, CRM setup, sales funnel design & B2B sales optimization for companies in Kochi, Trivandrum, Calicut and across Kerala."
+      seoKeywords="sales strategy Kerala, lead generation Kerala, lead generation Kochi, CRM implementation Kerala, sales funnel Kerala, business growth Kerala, B2B sales Kerala, sales consulting Kerala, sales optimization Kochi, MLM lead generation Kerala, sales automation Kerala, WhatsApp lead generation Kerala, sales training Kerala, revenue growth Kerala, business development Kerala, startup sales Kerala, sales strategy Trivandrum"
       features={[
         "Sales Process Development",
         "Sales Funnel Optimization",

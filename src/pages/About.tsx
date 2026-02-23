@@ -34,9 +34,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <SEO 
-        title="About Fivsys | Web Design Company Kerala | Digital Marketing Agency Kochi"
-        description="Learn about Fivsys - Kerala's trusted website development company and SEO agency. Serving businesses in Kochi, Trivandrum, Calicut with affordable web design and digital marketing services. കേരള വെബ്സൈറ്റ് കമ്പനി."
-        keywords="about fivsys, web design company Kerala, branding agency Kerala, digital marketing Kerala, website development company in Kerala, SEO company Kerala, logo design Kerala"
+        title="About Fivsys | Best Web Design & Digital Marketing Company Kerala | IT Agency Kochi"
+        description="About Fivsys — Kerala's best website development company and digital marketing agency. Trusted by businesses in Kochi, Trivandrum, Calicut, Thrissur and across Kerala for affordable web design, SEO & branding. കേരള വെബ്സൈറ്റ് കമ്പനി."
+        keywords="about fivsys, best web design company Kerala, website development company Kerala, IT company Kerala, digital marketing agency Kerala, branding agency Kerala, SEO company Kerala, logo design Kerala, web agency Kochi, trusted web developers Kerala, top digital agency Kerala, web design firm Kerala, software company Kerala, technology company Kerala"
         schemaType="AboutPage"
       />
       <Navbar />

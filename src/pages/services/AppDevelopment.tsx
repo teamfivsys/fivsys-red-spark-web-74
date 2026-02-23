@@ -8,9 +8,9 @@ const AppDevelopment = () => {
       title="App Development"
       description="Native and cross-platform mobile applications that deliver exceptional user experiences across all devices."
       icon={<Smartphone className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Mobile App Development Services | iOS & Android | Fivsys Bangalore"
-      seoDescription="Professional mobile app development services. Native iOS, Android, and cross-platform apps with AI integration, superior UX design, and app store optimization."
-      seoKeywords="app development Bangalore, mobile app development, iOS app development, Android app development, cross-platform apps, React Native, Flutter, mobile UX design"
+      seoTitle="Mobile App Development Kerala | Android & iOS App Developers Kochi, Trivandrum | Fivsys"
+      seoDescription="Best mobile app development company in Kerala. Native Android & iOS apps, cross-platform apps with AI integration for businesses in Kochi, Trivandrum, Calicut, Thrissur and all Kerala districts."
+      seoKeywords="mobile app development Kerala, app development company Kerala, Android app development Kerala, iOS app development Kerala, app developers Kochi, mobile app development Kochi, app development Trivandrum, cross-platform app development Kerala, React Native Kerala, Flutter app development Kerala, app development company Calicut, cheap app development Kerala, affordable app development Kerala, best app developers Kerala, app development Thrissur, app development Kannur, app development Ernakulam, mobile app development company India"
       features={[
         "Native iOS app development",
         "Native Android app development",

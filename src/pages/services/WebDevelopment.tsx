@@ -8,9 +8,9 @@ const WebDevelopment = () => {
       title="Web Development"
       description="Custom AI-powered websites designed to convert visitors into customers. As a leading web design company Kerala, we offer affordable website design for businesses across Kochi, Trivandrum, and Calicut."
       icon={<Globe className="h-16 w-16 text-fivsys-red" />}
-      seoTitle="Web Development Kerala | Website Development Company Kochi, Trivandrum | Fivsys"
-      seoDescription="Leading web design company Kerala offering affordable website design, WordPress development, and e-commerce solutions. Trusted web developers Kochi and Trivandrum businesses rely on. കേരള വെബ്സൈറ്റ് കമ്പനി."
-      seoKeywords="website development company in Kerala, web design company Kerala, affordable website design Kerala, WordPress developer Kerala, e-commerce website Kerala, web developers Kochi, web development Trivandrum, web design Calicut, കേരള വെബ്സൈറ്റ് കമ്പനി, കൊച്ചി വെബ് ഡിസൈൻ"
+      seoTitle="Best Web Design Company in Kerala | Website Development Kochi, Trivandrum, Calicut | Fivsys"
+      seoDescription="Best website development company in Kerala. Affordable web design, WordPress, e-commerce & business websites for Kochi, Trivandrum, Calicut, Thrissur, Kannur, Kollam and all Kerala districts. Starting ₹15,000. കേരള വെബ്സൈറ്റ് കമ്പനി."
+      seoKeywords="best web design company in Kerala, website development company Kerala, affordable website design Kerala, cheap website design Kerala, website development Kochi, web design Kochi, web developers Kochi Ernakulam, website development Trivandrum, web design Trivandrum, web development Calicut Kozhikode, web design Thrissur, web design Kannur, website company Kollam, web design Malappuram, web design Palakkad, WordPress developer Kerala, e-commerce website Kerala, business website design Kerala, landing page design Kerala, static website Kerala, dynamic website Kerala, responsive website Kerala, SEO friendly website Kerala, website redesign Kerala, കേരള വെബ്സൈറ്റ് കമ്പനി, കൊച്ചി വെബ് ഡിസൈൻ, കേരള വെബ് ഡെവലപ്മെന്റ്"
       features={[
         "Custom website design and development",
         "Responsive and mobile-friendly layouts",
