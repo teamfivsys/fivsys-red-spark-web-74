@@ -78,6 +78,17 @@ const SocialMediaMarketing = () => {
         }
       ]}
       ctaText="Ready to elevate your social media presence?"
+      faqItems={[
+        { question: "Which social media platforms work best for Kerala businesses?", answer: "Instagram and Facebook are most effective for B2C Kerala businesses. LinkedIn works well for B2B. WhatsApp Business is essential for direct customer communication. YouTube is great for product demos and tutorials." },
+        { question: "How much does social media marketing cost in Kerala?", answer: "Social media management in Kerala starts from ₹10,000/month for basic packages. Full social media marketing including content creation, ads, and analytics starts from ₹20,000/month." },
+        { question: "Can Fivsys run Instagram and Facebook ads in Kerala?", answer: "Yes, Fivsys creates and manages targeted Instagram and Facebook ad campaigns for Kerala businesses, with location-based targeting for specific cities like Kochi, Trivandrum, Calicut, and Thrissur." },
+        { question: "How many posts per week does Fivsys create for social media?", answer: "Standard packages include 3–5 posts per week per platform. Premium packages include daily posting with Reels, Stories, and carousel content for maximum reach and engagement." },
+        { question: "Can social media marketing help a local business in Kerala get more customers?", answer: "Yes, local businesses in Kerala typically see 2–5x increase in walk-in customers and inquiries within 3 months of consistent social media marketing with Fivsys." },
+      ]}
+      serviceSchema={{
+        name: "Social Media Marketing Kerala",
+        description: "Instagram, Facebook, and YouTube marketing for businesses in Kerala and India",
+      }}
     />
   );
 };

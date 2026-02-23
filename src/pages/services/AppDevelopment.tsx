@@ -78,6 +78,22 @@ const AppDevelopment = () => {
         }
       ]}
       ctaText="Ready to create your mobile app?"
+      faqItems={[
+        { question: "How much does mobile app development cost in Kerala?", answer: "Mobile app development in Kerala starts from ₹50,000 for a basic app. Cross-platform apps cost ₹1,00,000–₹3,00,000 and native iOS/Android apps cost ₹2,00,000–₹8,00,000 depending on features." },
+        { question: "How long does it take to develop a mobile app in Kerala?", answer: "A basic app takes 6–8 weeks. A full-featured cross-platform app takes 10–16 weeks. Enterprise apps with complex features take 4–6 months." },
+        { question: "Do you develop Android and iOS apps in Kerala?", answer: "Yes, Fivsys develops native Android apps (Kotlin/Java), native iOS apps (Swift), and cross-platform apps (React Native/Flutter) for businesses in Kochi, Trivandrum, Calicut and across Kerala." },
+        { question: "Can you add AI features to a mobile app?", answer: "Yes, Fivsys integrates AI features like chatbots, recommendation engines, image recognition, and natural language processing into mobile apps." },
+        { question: "Do you submit apps to Google Play Store and Apple App Store?", answer: "Yes, Fivsys handles the complete app store submission process including optimization for discoverability (ASO) on both Google Play Store and Apple App Store." },
+      ]}
+      serviceSchema={{
+        name: "Mobile App Development Kerala",
+        description: "Native Android and iOS app development for businesses in Kerala and India",
+        offers: [
+          { name: "Basic Mobile App Kerala", price: "50000" },
+          { name: "Cross-Platform App Kerala", price: "100000" },
+          { name: "Native iOS/Android App Kerala", price: "200000" },
+        ]
+      }}
     />
   );
 };

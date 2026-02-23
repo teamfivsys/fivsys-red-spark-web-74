@@ -82,6 +82,17 @@ const SalesStrategy = () => {
         }
       ]}
       ctaText="Ready to transform your sales performance?"
+      faqItems={[
+        { question: "What is AI sales strategy and how does it help Kerala businesses?", answer: "AI sales strategy uses artificial intelligence to automate lead generation, qualify prospects, and optimize sales funnels. Kerala businesses using AI sales tools see 30–50% improvement in lead conversion rates." },
+        { question: "Does Fivsys offer CRM setup services in Kerala?", answer: "Yes, Fivsys implements and configures CRM systems like HubSpot, Zoho CRM, and custom CRM solutions for businesses in Kochi, Trivandrum, Calicut and across Kerala." },
+        { question: "How can WhatsApp be used for sales in Kerala?", answer: "Fivsys sets up WhatsApp Business API for automated lead nurturing, follow-ups, appointment scheduling, and sales conversations — highly effective for Kerala's WhatsApp-first market." },
+        { question: "Can Fivsys help with lead generation for MLM businesses in Kerala?", answer: "Yes, Fivsys specializes in lead generation for MLM and direct sales businesses in Kerala, including targeted Facebook Ads, WhatsApp campaigns, and landing page funnels." },
+        { question: "What results can I expect from sales strategy consulting?", answer: "Clients typically see 30–60% increase in lead conversion, 20–40% reduction in sales cycle length, and 25–50% growth in monthly revenue within the first 6 months." },
+      ]}
+      serviceSchema={{
+        name: "AI Sales Strategy and Lead Generation Kerala",
+        description: "Sales strategy consulting, CRM setup, and lead generation for businesses in Kerala",
+      }}
     />
   );
 };

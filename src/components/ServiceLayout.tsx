@@ -23,6 +23,12 @@ interface ServiceLayoutProps {
   seoTitle?: string;
   seoDescription?: string;
   seoKeywords?: string;
+  faqItems?: Array<{ question: string; answer: string }>;
+  serviceSchema?: {
+    name: string;
+    description: string;
+    offers?: Array<{ name: string; price?: string }>;
+  };
 }
 
 const ServiceLayout: React.FC<ServiceLayoutProps> = ({
@@ -35,15 +41,19 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
   ctaText = "Ready to transform your business?",
   seoTitle,
   seoDescription,
-  seoKeywords
+  seoKeywords,
+  faqItems = [],
+  serviceSchema,
 }) => {
   return (
     <div className="min-h-screen bg-fivsys-midnight text-white">
-      <SEO 
+      <SEO
         title={seoTitle || `${title} Services | Fivsys AI-Powered Solutions`}
         description={seoDescription || description}
-        keywords={seoKeywords || `${title}, AI solutions, Bangalore, India`}
+        keywords={seoKeywords || `${title}, AI solutions, Kerala, India`}
         schemaType="Service"
+        faqItems={faqItems}
+        serviceSchema={serviceSchema}
       />
       <Navbar />
 
@@ -139,6 +149,26 @@ const ServiceLayout: React.FC<ServiceLayoutProps> = ({
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      {faqItems.length > 0 && (
+        <section className="py-20 bg-fivsys-midnight">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+              <p className="text-fivsys-silver">Common questions about our {title.toLowerCase()} services in Kerala.</p>
+            </div>
+            <div className="space-y-4">
+              {faqItems.map((faq, index) => (
+                <div key={index} className="bg-fivsys-darkGray border border-fivsys-silver/10 rounded-lg p-6 hover:border-fivsys-red/30 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-white mb-2">{faq.question}</h3>
+                  <p className="text-fivsys-silver leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-fivsys-darkGray to-black">

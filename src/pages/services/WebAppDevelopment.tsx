@@ -82,6 +82,22 @@ const WebAppDevelopment = () => {
         }
       ]}
       ctaText="Ready to build a powerful web application?"
+      faqItems={[
+        { question: "What is the cost of web application development in Kerala?", answer: "Web application development in Kerala starts from ₹2,00,000 for an MVP. Full-featured SaaS or enterprise applications range from ₹5,00,000 to ₹20,00,000+ depending on complexity." },
+        { question: "Can Fivsys build custom SaaS products for Kerala businesses?", answer: "Yes, Fivsys builds custom SaaS applications, business portals, dashboards, and enterprise software for businesses in Kochi, Trivandrum, Calicut and across Kerala and India." },
+        { question: "Do you build MLM software in Kerala?", answer: "Yes, Fivsys specializes in MLM software development in Kerala — including binary, matrix, unilevel, and hybrid compensation plans with automated commissions, dashboards, and payment integrations." },
+        { question: "What technologies does Fivsys use for web app development?", answer: "Fivsys builds web apps using React, Next.js, Node.js, Python/Django, and Supabase. We select the best technology stack based on your specific business requirements and scalability needs." },
+        { question: "How long does web application development take in Kerala?", answer: "An MVP web application takes 8–12 weeks. A full-featured product takes 4–6 months. Enterprise applications with complex integrations take 6–12 months." },
+      ]}
+      serviceSchema={{
+        name: "Web Application Development Kerala",
+        description: "Custom web apps, SaaS, and MLM software development for businesses in Kerala",
+        offers: [
+          { name: "MVP Web Application Kerala", price: "200000" },
+          { name: "SaaS Development Kerala", price: "500000" },
+          { name: "MLM Software Development Kerala", price: "300000" },
+        ]
+      }}
     />
   );
 };

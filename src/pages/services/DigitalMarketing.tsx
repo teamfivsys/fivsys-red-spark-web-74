@@ -78,6 +78,17 @@ const DigitalMarketing = () => {
         }
       ]}
       ctaText="Ready to boost your digital marketing results?"
+      faqItems={[
+        { question: "Which is the best SEO company in Kerala?", answer: "Fivsys is one of Kerala's top SEO companies, offering proven SEO strategies for businesses in Kochi, Trivandrum, Calicut, Thrissur and across Kerala to rank #1 on Google." },
+        { question: "How long does SEO take to show results in Kerala?", answer: "SEO typically shows initial results in 3–4 months and significant ranking improvements in 6–12 months. Local SEO for Kerala-specific keywords can show faster results." },
+        { question: "How much do SEO services cost in Kerala?", answer: "SEO services in Kerala typically start from ₹10,000/month for local SEO packages. Comprehensive digital marketing packages including Google Ads and social media start from ₹25,000/month." },
+        { question: "Do you offer Google Ads services in Kerala?", answer: "Yes, Fivsys manages Google Ads (PPC) campaigns for businesses across Kerala. We create targeted campaigns for local Kerala keywords to maximize ROI and drive quality leads." },
+        { question: "Can Fivsys help my business rank on Google in Kerala?", answer: "Yes, Fivsys has helped 100+ Kerala businesses rank on the first page of Google for their target keywords through a combination of technical SEO, content marketing, and link building." },
+      ]}
+      serviceSchema={{
+        name: "SEO and Digital Marketing Services Kerala",
+        description: "Expert SEO, Google Ads, and digital marketing for businesses in Kerala and India",
+      }}
     />
   );
 };

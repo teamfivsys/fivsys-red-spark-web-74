@@ -74,6 +74,22 @@ const WebDevelopment = () => {
         }
       ]}
       ctaText="Ready to build a website that converts?"
+      faqItems={[
+        { question: "How much does website development cost in Kerala?", answer: "Website development in Kerala starts from ₹15,000 for basic websites. Business websites range from ₹50,000–₹2,00,000 and e-commerce websites from ₹75,000. Fivsys offers transparent pricing with no hidden costs." },
+        { question: "How long does it take to build a website in Kerala?", answer: "A basic website takes 1–2 weeks. A business website takes 3–5 weeks and an e-commerce website takes 6–10 weeks. Timelines depend on complexity and content readiness." },
+        { question: "Do you build websites for all Kerala districts?", answer: "Yes, Fivsys builds websites for businesses across all 14 Kerala districts including Kochi, Trivandrum, Calicut, Thrissur, Kannur, Kollam, Malappuram, Palakkad, Kottayam, Alappuzha, Idukki, Wayanad, Kasaragod, and Pathanamthitta." },
+        { question: "Is SEO included in website development?", answer: "Yes, all websites built by Fivsys include on-page SEO optimization, fast-loading code, mobile responsiveness, and Google Analytics integration as standard." },
+        { question: "Do you build WordPress websites in Kerala?", answer: "Yes, Fivsys builds WordPress websites, custom HTML/CSS sites, React-based websites, and e-commerce stores on WooCommerce and Shopify for Kerala businesses." },
+      ]}
+      serviceSchema={{
+        name: "Website Development Kerala",
+        description: "Custom website design and development for businesses in Kerala and India",
+        offers: [
+          { name: "Basic Website Kerala", price: "15000" },
+          { name: "Business Website Kerala", price: "50000" },
+          { name: "E-commerce Website Kerala", price: "75000" },
+        ]
+      }}
     />
   );
 };
